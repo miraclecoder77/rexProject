@@ -1,0 +1,142 @@
+* {
+    color: #1a1a1a;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+  .login-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 40%;
+    min-height: 35%;
+  }
+  .header {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .logo {
+    width: 11rem;
+    margin-bottom: 2rem;
+  } 
+  .header-text {
+    text-align: center;
+    font-family: Montserrat bold;
+    h2 {
+        font-size: 1.2rem;
+    }
+    h5 {
+        font-size: 1rem;
+    }
+  } 
+  .header-text {
+    margin-bottom: 2rem;
+  }
+  
+  h5.sign {
+    margin-left: 3.2rem;
+  }
+  
+  .forgot {
+    text-transform: uppercase;
+    text-align: right;
+    margin-bottom: 1rem;
+    font-family: "Montserrat Bold",serif;
+    font-weight: bold;
+    font-size: 17px;
+  }
+  
+  input {
+    background-color: #f0f0f0;
+    min-height: 3.1rem;
+    border-radius: 0.3125rem;
+    margin-bottom: 0.3125rem;
+    border: none;
+    width: 100%;
+  }
+  //input and label
+  .float-container {
+    border: solid 1px #ccc;
+    padding: 0 8px;
+    position: relative;
+  }
+  .float-container input {
+    border: none;
+    font-size: 16px;
+    margin: 16px 0 10px;
+    outline: 0;
+  }
+  label {
+    font-size: 16px;
+    position: absolute;
+    transform-origin: top left;
+    transform: translate(0, 16px) scale(1);
+    transition: all .1s ease-in-out;
+  }
+  .float-container.active label {
+    transform: translate(0, 4px) scale(.75);
+  }
+  
+  a {
+    color: red;
+  }
+  .sign-in-btn {
+    width: 100%;
+    min-height: 3.1rem;
+    opacity: 0.5;
+    background: #c91c24;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr 2fr;
+    border-radius: 0.75rem 0.75rem 0.75rem 0;
+    img {
+      padding-left: 30%;
+      display: none;
+    }
+    span {
+      color: rgb(149, 0, 7); 
+      // margin-left: 4rem; 
+      text-align: left;
+      padding-left: 10%;
+    }
+  } 
+  .sign-in-btn:hover {
+    opacity: 1;
+    img {
+      display: initial;
+      animation: icon_left .8s ease 1 ;
+    }
+    @keyframes icon_left {
+      from {margin-left: 20%;} to { margin-left: 30%;}
+    }
+    span {
+      color: #fff;
+    }
+  }
+  .footer-text {
+    margin-top: 1rem;
+  }
+  
+  .foot-link {
+    text-decoration: none;
+  }
+
+  
+  @media only screen and (min-width: 768px) {
+  
+  .wrapper {
+    height: 100vh;
+    width: 100%;
+  }  
+  .login-section {
+    // min-width: 40%;
+    padding: 20% 0px;
+  }
+  }

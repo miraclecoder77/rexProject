@@ -1,3 +1,303 @@
+.layout {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+.header {
+    text-align: center;
+    margin-top: 3.75rem;
+    .bg-red {
+        display: flex;
+        justify-content: center;
+        height: 17.5rem;
+        background: #950007;
+        width: 100%;
+    }
+    .h1 {
+        font-size: 3.06rem;
+        font-weight: 700;
+        // font-family: MontSerrat Bold;
+        letter-spacing: 1.2px;
+        color: #1a1a1a;
+    }
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-btn {
+        margin: 1.25rem;
+        outline: none;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 0.75rem;
+        box-shadow: 0 1.125rem 1.125rem #00000029;
+        transition: .2s ease-in all;
+        font-weight:700;
+    }
+    .btn-login{
+        color: white;
+        background: #c91c24;
+   
+    }
+    .btn-getStarted {
+        background: #fff;
+        color: #585858;
+    }
 
-@media only screen and (min-width: 480px)  {
+}
+.about-section {
+    .container {
+        display: flex;
+        // justify-content: center;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 1rem;
+      }
+      
+      .about-content{
+        flex: 1;
+        padding: 1rem; 
+      }
+      .about-content > h2 {
+        font-size: 1.8125rem;
+        font-weight: 800;
+        color: #1a1a1a;
+        letter-spacing: 1.2px;      
+      }
+      
+      .about-content > p {
+        text-align: center;
+        font-family: Roboto;
+        font-size: .79rem;
+        color: #1a1a1a;
+        opacity: 1;
+        margin-bottom: 20px;
+      
+      }
+      
+      .about-img {
+        flex: 1;
+        margin-bottom: 80px;
+        padding: 2rem;
+      }      
+      .box-group {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 1rem;
+      
+      }
+      .box {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box1 {
+        background-color: #950007;
+        width: 20%;
+        height: 0.75rem;
+        border-radius: 0.625rem;
+      }      
+      .box2 {
+        background-color: #950007;
+        width: 35%;
+        height: 15px;
+        border-radius: 10px;
+      }  
+      .box3 {
+        background-color: #950007;
+        width: 50%;
+        height: 15px;
+        border-radius: 10px;
+      }
+      .box4 {
+        background-color: #950007;
+        width: 100%;
+        height: 15px;
+        border-radius: 10px;
+      }
+      .box-text {
+        font-family: Bold;
+        font-size: 0.79rem;
+        color: #1a1a1a;
+        font-weight: 600;
+        flex: 3;
+        text-align: left;
+      }
+      .box-text__red {
+          margin-left: 0;
+          color: #c91c24;
+          font-size: 20px;
+          font-family: Roboto,Bold;
+          text-transform: capitalize;
+          letter-spacing: .86px;
+          font-weight: 700;
+      }
+}
+.getStarted-section {
+    width: 100%;
+    height: 37.5rem;
+    background: #950007;
+    text-align: center;
+}
+.getStarted {
+    background: #fff;
+    top: 2.7rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column-reverse;
+    box-shadow: 0 24px 24px #00000029;
+}
+.getStarted-content {
+    text-align: left;
+    // flex: 1;
+    h4 {
+        color: #c91c24;
+        font-size: 1.25rem;
+        letter-spacing: .4px;
+        margin-bottom: 1.875rem;
+    }
+    span {
+        color: #c91c24;
+        font-size: 1.25rem;
+    }
+    p {
+        margin-bottom: 1.875rem;
+        font-size: 1.25rem;
+    }
+    .get-btn {
+        background: #c91c24;
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+}
+.offers-section {
+    text-align: center;
+}
+.offers {
+    background: #fff;
+    border-radius: 1.5rem;
+    box-shadow: 0 24px 24px #00000029;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    
+
+    h2 {
+        font-size: 1.875rem;
+        color: #1a1a1a;
+        margin-bottom: 3.125rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        text-align: center;
+    }
+}
+.offers-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.offer-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    border: none;
+    img {
+        width: 2.625rem;
+        height: 2.625rem;
+        margin-bottom: 1rem;
+    }
+    h4 {
+        font-size: 0.75rem;
+        color: #1a1a1a;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    p {
+        text-align: center;
+        font-size: 0.625rem;
+    }
+}
+a {
+    text-decoration: none;
+}   
+
+
+@media only screen and (min-width: 768px)  {
+    .layout {
+        height: 100vh;
+        overflow: visible;
+    }
+    .header {
+        .btn-group {
+            flex-direction: row;
+        }
+        .btn-login {
+            width: fit-content;
+        }
+    }
+    .getStarted {
+        top: 7.5rem;
+        flex-direction: row;
+        border-radius: 1.5rem;
+        img {
+            margin-top: 1rem;
+        }
+    }
+    .getStarted-content {
+        margin-left: 5rem;
+    }
+    .offers {
+        bottom: -3rem;
+    }
+    .offers-grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+        gap: .5rem;
+    }
+   .about-section {
+    .container {
+        flex-direction: row;
+      }
+      .about-content {
+        text-align: left;
+      }
+      .about-content > p {
+        font-size: 1rem;
+        text-align: left;
+        color: #1a1a1a;
+        margin-bottom: 1.25rem;
+      } 
+      .box1 {
+        background-color: #950007;
+        width: 20px;
+        height: 15px;
+        border-radius: 10px;
+        margin-left: 30px;
+      }
+      .box-text {
+        font-family: Bold;
+        font-size: 0.75rem;
+        color: #1a1a1a;
+        font-weight: 700;
+        margin-left: 20px;
+      }
+    
+      .box-text__red{
+        margin-left: 40%;
+        color: #c91c24;
+        font-size: 20px;
+        font-family: Roboto,Bold;
+        text-transform: capitalize;
+        letter-spacing: .86px;
+        font-weight: 700;
+      }
+   }
 }

@@ -1,0 +1,32 @@
+<nav class="navbar  navbar-expand-lg fixed-top  navbar-light  layout ">
+    <div class="container">
+        <!-- nav brand -->
+        <a href="#" class="navbar-brand">
+            <img src="../../assets/images/nav-logo.svg" class="img-fluid" alt="">
+        </a>
+        <!-- hamburger toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navigation link -->
+        <div class="collapse navbar-collapse  " id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item active nav-home-link">
+                <!-- routerLink="" [fragment]="home"> -->
+                <a class="nav-link" style="color: #fff;" (click)="navFragmentLink('home')" >Home </a>
+              </li>
+              <li class="nav-item">
+                <!-- [fragment]="getStarted" routerLink=""   -->
+                <a class="nav-link" (click)="navFragmentLink('Contact')">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sign up</a>
+              </li>
+              <li class="nav-item nav-login-btn">
+                <a class="nav-link login-btn " routerLink="/login">login</a>
+              </li>
+            </ul>
+          </div>
+        
+    </div>
+</nav>

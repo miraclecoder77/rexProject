@@ -10,6 +10,13 @@
   <link rel="stylesheet" href="https://assetslogos.s3.eu-west-1.amazonaws.com/frontendassets/design-system/styles-responsive.alpha03.min.css">
 </head>
 <body>
+  <div class="preloader"></div>
   <app-root></app-root>
 </body>
+<script>
+  // after window is loaded completel
+  window.onload = function ()  {
+    document.querySelector(".preloader").style.display = "none"
+  }
+  </script>
 </html>

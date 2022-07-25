@@ -7,27 +7,22 @@
 .nav-item {
     font-weight: 600;
     text-align: center;
-    font-size: 5rem !important;
-    // height: 800%;
+    font-size: 2rem !important;
 }
 // link anchor tag
 .nav-home-link {
     border-radius:0.5rem ;
     background: #c91c24;
     color: #fff;
-    // width
-}
-// home link
-.nav-home-btn {
-    border:1px solid #c91c24;
-    color: #c91c24;
-    border: 0.5rem;
-    
-}
+} 
+
 //login link
 .nav-login-btn {
     border: 1px solid #c91c24;
     border-radius:0.5rem ;
+    a {
+        color: #c91c24;    
+    }
 }
 
 
@@ -38,12 +33,9 @@
         gap: 2rem;
     }
     .nav-item {
-        padding: .5rem 1.25rem;
+        padding: .5rem 1rem;
     }
     .nav-link {
-        font-size: 1.2rem;
-    }
-    .nav-home-btn, .nav-home-link {
-        
+        font-size: 1rem;
     }
 }

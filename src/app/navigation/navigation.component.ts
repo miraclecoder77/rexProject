@@ -12,8 +12,5 @@ export class NavigationComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  navFragmentLink(fragment :string):void {
-    this.router.navigateByUrl('#' + fragment)
-  }
 
 }

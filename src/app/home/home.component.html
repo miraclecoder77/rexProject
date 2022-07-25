@@ -1,6 +1,7 @@
 <main class="layout">
     <app-navigation></app-navigation>
-    <section class="header py-5">
+    <!-- header section -->
+    <section class="header-section py-5">
         <div class="container">
             <h1 class="h1">Manage Your Entire Retail Business</h1>
             <p>Are you looking for a digital solution that makes managing your inventory easier, helps find <br>
@@ -9,9 +10,16 @@
                 <button class="header-btn btn-login">Login To RexRetail</button>
                 <button class="header-btn btn-getStarted">Get Started</button>
             </div>
+            <img src="../../assets/images/BG-Image.png" class="img-fluid header-img" alt="">
         </div>
-        <div class="bg-red"></div>
+        <div class="bg-red">
+            <a href="#">
+                <img src="../../assets/images/en_badge_web_generic.png" class="img-fluid" alt="">
+            </a>
+        </div>
     </section>
+    <!-- header section ends here -->
+    <!-- about section -->
     <section class="about-section">
         <div class=" container about-rexRetail ">
             <div class="about-content">
@@ -22,28 +30,28 @@
                 <div >
                     <div class="box-group">
                         <span class="box">
-                            <span class="box1"></span>
+                            <span class="box1 container"></span>
                         </span>
                         <p class="box-text">Manage inventory and be aware of any under-stocked items.</p>
                     </div>
                     
                     <div class="box-group">
                         <span class="container">
-                            <span class="box2"></span>
+                            <span class="box2 container"></span>
                         </span>
                         <p class="box-text">Identify customer trends and run discount loyalty programs.</p>
                     </div>
                     
                     <div class="box-group">
                         <span class="box">
-                            <span class="box3"></span>
+                            <span class="box3 container"></span>
                         </span>
                         <p class="box-text">Track All Cashier Sales</p>
                     </div>
                     
                     <div class="box-group">
                         <span class="box">
-                            <span class="box4"></span>
+                            <span class="box4 "></span>
                         </span>
                         <p class="box-text">Instant settlements, so cash is processed right away, giving you more float.</p>
                     </div>
@@ -56,7 +64,49 @@
             </div>
         </div>
     </section>
-    <section class="sub"></section>
+    <!-- about section ends here -->
+    <!-- sub section  -->
+    <section class="sub-section ">
+        <div class="container">
+            <div class="sub-title">
+                <h1>Subcription Plans</h1>
+                <p>
+                    Merchants are eligible to at least one plan per time which can be activated at any point on the RexRetail platform. The subscription plan can be monthly, <br>
+                    half-yearly, or annually depending on the preference or convenience of the merchant. 
+                    <br> <br>
+                    Each merchant is entitled to a trial period of 10 days. Over this period, the merchant will not be requested to pay any value for the subscription.
+
+
+                </p>
+            </div>
+            <div class="sub-body container">
+                <div >
+                    <div class="sub-box">
+                        <h4 class="danger">Mobile Plan</h4>
+                        <h4>NGN 1,000/Basic</h4>
+                        <p>
+                            With the mobile only plan, all you need to get started is your Android Mobile Phone. You can make cash sales from your store directly on your mobile phone. Click here to download the app from Playstore and complete your registration.
+                        </p>
+                    </div>
+                </div>
+                <div class="sub-box">
+                    <h4 class="danger">Lease Plan</h4>
+                    <p>
+                        This Plan offers you flexibility to own a POS device as well as access the RexRetail App. You can choose from a list of several repayment plans available today. You can receive card and cash payments with this plan.
+                    </p>
+                </div>
+                <div class="sub-box">
+                    <h4 class="danger">Outright Plan</h4>
+                    <h4 class="light">NGN 95,000/POS Device </h4>          
+                    <p>
+                        This Plan allows you make payments to own the POS device at a go. You can purchase multiple devices and access RexRetail with one subscription that allows you accept card and cash payments.
+                    </p>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <!-- sub section ends here -->
+    <!-- offers section -->
     <section class="offers-section">
         <div class="container py-4 offers">
             <h2>RexRetail Offers The Best</h2>
@@ -129,6 +179,7 @@ between scanning        product purchases or scanning items into your inventory.
             </div>
         </div>
     </section>
+    <!-- offers section  -->
     <section class="getStarted-section">
         <div id="getStarted" class=" container getStarted">
             <div class="getStarted-content">
@@ -150,6 +201,7 @@ between scanning        product purchases or scanning items into your inventory.
 
         </div>
     </section>
+    <!-- offers section ends here -->
     <app-footer></app-footer>
 
 </main> 

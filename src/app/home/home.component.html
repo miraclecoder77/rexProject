@@ -1,14 +1,14 @@
 <main class="layout">
-    <app-navigation></app-navigation>
+    <app-navigation (onLinkClicked)="scrollToSection($event)" ></app-navigation>
     <!-- header section -->
-    <section class="header-section py-5">
+    <section id="landingPage" #home class="header-section py-5">
         <div class="container">
             <h1 class="h1">Manage Your Entire Retail Business</h1>
             <p>Are you looking for a digital solution that makes managing your inventory easier, helps find <br>
                  customer trends and lets you track payments all-in-one box?</p>
             <div class="btn-group">
-                <button class="header-btn btn-login">Login To RexRetail</button>
-                <button class="header-btn btn-getStarted">Get Started</button>
+                <button routerLink="/login" class="header-btn btn-login">Login To RexRetail</button>
+                <button routerLink="/sign-up" class="header-btn btn-getStarted">Get Started</button>
             </div>
             <img src="../../assets/images/BG-Image.png" class="img-fluid header-img" alt="">
         </div>
@@ -139,8 +139,7 @@
                     <img src="../../assets/images/barcode-scanner.svg" alt="">
                     <h4>Barcode Scanning</h4>
                     <p>
-                        Your RexRetail payment terminal can quickly switch
-between scanning        product purchases or scanning items into your inventory.
+                        Your RexRetail payment terminal can quickly switch between scanning   product purchases or scanning items into your inventory.
                     </p>
                 </div>
                 <div class="card offer-card">
@@ -179,7 +178,7 @@ between scanning        product purchases or scanning items into your inventory.
         </div>
     </section>
     <!-- offers section  -->
-    <section class="getStarted-section">
+    <section class="getStarted-section" >
         <div id="getStarted" class=" container getStarted">
             <div class="getStarted-content">
                 <h4>Get Started Today -</h4>
@@ -201,6 +200,78 @@ between scanning        product purchases or scanning items into your inventory.
         </div>
     </section>
     <!-- offers section ends here -->
-    <app-footer></app-footer>
+    <!-- footer section starts here -->
+    <footer class="footer" id="contact">
+        <div class="wrapper container">
+            <div class="logo">
+                <img src="../../assets/images/logo.svg" alt="">
+            </div>
+            <div class="footer-content">
+                <div>
+                    <ul>
+                        <h5>Company</h5>
+                        <a href="#">
+                            <li> About</li>
+                        </a>
+                        <a href="#">
+                            <li>Features</li>
+                        </a>
+                        <a href="#">
+                            <li>F.A.Q</li>
+                        </a>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <h5>Legal</h5>
+                        <a href="#">
+                            <li>Pricing</li>
+                        </a>
+                        <a href="#">
+                            <li>Privacy</li>
+                        </a>
+                        <a href="#">
+                            <li>Terms</li>
+                        </a>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <h5>Social</h5>
+                        <a href="#">
+                            <li>Facebook</li>
+                        </a>
+                        <a href="#">
+                            <li>Instagram</li>
+                        </a>
+                        <a href="#">
+                            <li>Twitter</li>
+                        </a>
+                    </ul>
+                </div>
+                <div #contact>
+                    <ul>
+                        <h5>Contact</h5>
+                        <li>
+                            8 Eric Moore Street,
+                            <br>
+                            Wemabod Estate,
+                            <br>
+                            ikeja, Lagos.
+                        </li>
+                        <li>
+                            0700-ACCELEREX (0700-222353739)
+                        </li>
+                        <a href="#" class="support-link">support@globalaccelerex.com</a>
+                    </ul>
+                </div>
+                <a href="#">
+                    <img src="../../assets/images/en_badge_web_generic.png" class="img-fluid" alt="playstore logo">
+                </a>
+            </div>
+        </div>
+        <p>Google Play and the Google Play logo are trademarks of Google LLC. <br>
+            Copyright, 2022 - Global Accelerex Limited</p>
+    </footer>
 
 </main> 

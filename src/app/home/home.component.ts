@@ -1,18 +1,44 @@
-import { Component, OnInit } from '@angular/core';
-// import { Router, RouterEvent, NavigationEnd, Event, NavigationStart, ActivatedRoute} from '@angular/router';
-// import *  'jquery';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit {
 
-  constructor() {}
+  @ViewChild("contact", {static: false})
+  contactEl: ElementRef;
 
-  ngOnInit(): void {
+  @ViewChild("home", {static: false})
+  homeEl: ElementRef;
+  
+  constructor(private route : ActivatedRoute) {}
+
+  ngOnInit(): void {}
+
+  ngAfterViewInit(): void {
   }
 
+  scrollToSection(route: string) {
+    if (route === 'contact') {
+      this.scrollToContact();
+    } else if (route === 'home') {
+      this.scrollToHome();
+    }
+  }
+
+  scrollToContact() {
+    this.contactEl.nativeElement.scrollIntoView({
+      behaviour: "smooth"
+    })
+  }
+
+  scrollToHome() {
+    this.homeEl.nativeElement.scrollIntoView({
+      behaviour: "smooth"
+    })
+  }
 
 }

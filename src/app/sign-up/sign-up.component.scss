@@ -1,0 +1,140 @@
+*{
+    color: #1a1a1a;
+}
+.layout {
+    width: 100%;
+    height: calc(100vh);
+    background: url(https://rexretail-dev.globalaccelerex.com/BG-Image.c4ffebabcd31e1062ef9.svg);
+    background-size: cover;
+}
+.wrapper {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+}
+.sub-header {
+    height: 100%;
+    width: 100%;
+    padding-left: 15%;
+    padding-top: 12%;
+}
+.sub-header h3 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+.sub-header h1 {
+    font-size: 4rem;
+    font-weight: 800;
+}
+.setup {
+    font-size: 1.3rem;
+    font-family: Montserrat;
+    width: 100%;
+    z-index: 1000;
+    margin-top: 1rem;
+    padding: 2.5px, 10px;
+    position: relative;
+}
+.setup:before {
+    position: absolute;
+    content: "";
+    background: #f2e0e0;
+    top: 0;
+    left: 0;
+    min-width: 15%;
+    bottom: 0;
+    z-index: -1;
+    opacity: .8;
+}
+.steps {
+    margin-top: 3rem;
+    position: relative;
+}
+.steps:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 18px;
+    width: 1px;
+    background: #f2e0e0;
+}
+.step {
+    display: flex;
+    margin-bottom: 1.3rem;
+}
+.circle {
+    position: relative;
+    input {
+        visibility: hidden;
+    }
+    label {
+        background: #f9f9f9;
+        border: 1px solid #ED1C25;
+        border-radius: 50%;
+        width: 1.75rem;
+        height: 1.75rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    label:after {
+        border: 2px solid #ED1C25;
+        content: "";
+        height: 0.375rem;
+        transform: rotate(-45deg);
+        width: 0.75rem;
+        border-top: none;
+        border-right: none;
+        opacity: 0;
+    }
+}
+.step-text {
+    margin-left: 2rem;
+    font-size: 1.3rem;
+}
+.sub-header__footer {
+    margin-top: auto;
+    margin-bottom: 1.875rem;
+    a {
+        color: #ED1C25;
+        cursor: pionter;
+        text-decoration: none;
+    }
+    
+}
+//sub plans section
+.sub-plans-section {
+    height: 100%;
+    width: 100%;
+    padding-right: 30%;
+}
+.sub-plans {
+    background: red;
+    height: 100%;
+    box-shadow: 0 24px 24px #00000029;
+    border-radius:1.5rem;
+
+}
+
+
+
+@media only screen and (min-width: 480px)   {
+    .wrapper {
+        grid-template-columns: 1.5fr 1fr;
+    }
+}
+
+
+@media only screen and (min-width: 1400px) {
+    figure {
+        margin-bottom: 6rem;
+    }
+    .sub-header__footer {
+        margin-top: 6vmax;
+        margin-bottom: 2rem;
+    }
+    .sub-plans-section {
+        padding:15% 30% 15% 0px ;
+    }
+}

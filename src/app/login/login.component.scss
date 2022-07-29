@@ -109,10 +109,11 @@
     opacity: 1;
     img {
       display: initial;
-      animation: icon_left .8s ease 1 ;
+      animation: icon_left .8s  ;
     }
     @keyframes icon_left {
-      from {margin-left: 20%;} to { margin-left: 30%;}
+      // from {margin-left: 20%;} to { margin-left: 30%;}
+      100% {transform: translateX(2rem);}
     }
     span {
       color: #fff;

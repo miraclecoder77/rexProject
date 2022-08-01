@@ -6,7 +6,7 @@ import { ActivatedRoute} from '@angular/router';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit, AfterViewInit {
+export class HomeComponent implements OnInit {
 
   @ViewChild("contact", {static: false})
   contactEl: ElementRef;
@@ -17,9 +17,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   constructor(private route : ActivatedRoute) {}
 
   ngOnInit(): void {}
-
-  ngAfterViewInit(): void {
-  }
 
   scrollToSection(route: string) {
     if (route === 'contact') {

@@ -1,4 +1,4 @@
-import { Router } from '@angular/router';
+ import { Router } from '@angular/router';
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
@@ -14,7 +14,7 @@ export class NavigationComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
   clickLink(route: string) {
     this.onLinkClicked.emit(route);
   }

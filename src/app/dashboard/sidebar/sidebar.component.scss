@@ -1,0 +1,82 @@
+.layout {
+    background: #fff;
+    padding-top: 10%;
+    border-radius: 0px 2rem 0px 0px ;
+    height: 100%;
+    position: relative;
+    transition: all 0.4s ease-in-out 0s;
+}
+#layout {
+    width: 16rem ;
+}
+.toggle-btn-wrapper {
+    position: absolute;
+    right: -10px;
+    top: 5.1rem;
+    border-radius: 50%;
+    z-index: 1000;
+}
+.toggle-btn {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    padding: 0;
+    border: 1px solid white;
+}
+.forward {
+    background: red;
+}
+.backward {
+    background: green;
+}
+.wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+}
+.sidebar-logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.sidebar-link {
+    display: flex;
+    flex-direction: column;
+    // gap: .5rem;
+    margin-top: .5rem;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    background: #f0f0f0;
+    transition: all ease-in-out .3s;
+}
+.link {
+    display: grid;
+    grid-template-columns: .5fr 2fr;
+    gap: 1rem;
+    place-content: center;
+    margin: 4px 0px;
+    width: 100%;
+    height: 3rem;
+    padding: 0px 10%;  
+}
+.active {
+    background: wheat;
+}
+.link-text {
+    font-size: 1rem;
+    color:      #585858;
+    font-weight: 600;
+    font-family: Montserat bold, serif;
+    transition: all 0.4s ease-in-out 0s;
+}
+.hr {
+    width: 100%;
+    height: 1px;
+    background: grey;
+}

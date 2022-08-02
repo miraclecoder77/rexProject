@@ -1,0 +1,57 @@
+<div id="layout" class="layout">
+    <div class="wrapper">
+        <div class="sidebar-logo" >
+            <img *ngIf="showEl" src="../../../assets/images/nav-logo.svg" alt="">
+        </div>
+        <div class="sidebar-link">
+            <a routerLink="home" class="link active">
+                <img id="img" src="../../../assets/images/Home-Icon.svg" alt="icon">
+                <span *ngIf="showEl" class="link-text">Home</span>
+            </a>
+            <a class="link">
+                <img id="img" src="../../../assets/images/Complaints-Icon.svg" alt="icon">
+                <span *ngIf="showEl"  class="link-text">Complaints</span>
+            </a>
+            <a class="link">
+                <img id="img" src="../../../assets/images/User-Icon.svg" alt="icon">
+                <span *ngIf="showEl"  class="link-text">My Customer</span>
+            </a>
+            <a class="link">
+                <img id="img" src="../../../assets/images/device-icon.svg" alt="icon">
+                <span *ngIf="showEl"  class="link-text">My Devices</span>
+            </a>
+            <a routerLink="product" class="link">
+                <img id="img" src="../../../assets/images/product-Icon.svg" alt="icon">
+                <span *ngIf="showEl"  class="link-text">My products</span>
+            </a>
+            <a class="link">
+                <img id="img" src="../../../assets/images/Money-Icon.svg" alt="icon">
+                <span *ngIf="showEl"  class="link-text">My Reports</span>
+            </a>
+            <a class="link">
+                <img id="img" src="../../../assets/images/Store-Icon.svg" alt="icon">
+                <span *ngIf="showEl"  class="link-text"> My Shops</span>
+            </a>
+            <a class="link">
+                <img id="img" src="../../../assets/images/Profile-Icon.svg" alt="icon">
+                <span *ngIf="showEl"  class="link-text">My Staff</span>
+            </a>
+            <hr class="hr">
+            <a class="link">
+                <img id="img" src="../../../assets/images/Audit-Icon.svg" alt="icon">
+                <span *ngIf="showEl"  class="link-text">Observe My staff</span>
+            </a>
+            <a class="link">
+                <img id="img" src="../../../assets/images/bag.svg" alt="icon">
+                <span *ngIf="showEl"  class="link-text">Pay Now</span>
+            </a>
+        </div>
+    </div>
+    <div class="toggle-btn-wrapper">
+        <button *ngIf="!isCollapse"  class="toggle-btn forward" (click)="openSidebar()">      
+        </button>
+        <button *ngIf="isCollapse" class="toggle-btn backward" (click)="collapseSidebar()">
+
+        </button>
+    </div>
+</div>

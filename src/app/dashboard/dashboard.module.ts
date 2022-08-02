@@ -5,6 +5,7 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import { ProductsComponent } from './products/products.component';
 import { DashboardHomeComponent } from './dashboard-home/dashboard-home.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 
@@ -13,6 +14,7 @@ import { DashboardHomeComponent } from './dashboard-home/dashboard-home.componen
     DashboardComponent,
     ProductsComponent,
     DashboardHomeComponent,
+    SidebarComponent,
   ],
   imports: [
     CommonModule,

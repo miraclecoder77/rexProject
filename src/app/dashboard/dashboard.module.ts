@@ -6,6 +6,7 @@ import { DashboardComponent } from './dashboard.component';
 import { ProductsComponent } from './products/products.component';
 import { DashboardHomeComponent } from './dashboard-home/dashboard-home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { LoginTopBarComponent } from './login-top-bar/login-top-bar.component';
 
 
 
@@ -15,6 +16,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     ProductsComponent,
     DashboardHomeComponent,
     SidebarComponent,
+    LoginTopBarComponent,
   ],
   imports: [
     CommonModule,

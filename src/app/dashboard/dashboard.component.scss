@@ -19,16 +19,17 @@
     height: 100%;
 }
 .topbar {
-    min-width: 30%;
-    min-height: 4.5rem;
+    width: 30%;
+    height: 4rem;
     position: fixed;
     border-radius: 0 0 0 2rem;
     box-shadow: 0 0 24px #0000003d;
     top: 0;
     right: 0;
-    display: flex;
-    background: #fff;
 }
 
 @media only screen and (min-width: 1440px) {
+    .topbar {
+        width: 20%;
+    }
 }

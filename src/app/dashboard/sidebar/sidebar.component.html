@@ -48,9 +48,9 @@
         </div>
     </div>
     <div class="toggle-btn-wrapper">
-        <button *ngIf="!isCollapse"  class="toggle-btn forward" (click)="openSidebar()">      
+        <button *ngIf="!isCollapse"  class="toggle-btn forward" (click)="collapseSidebar()">      
         </button>
-        <button *ngIf="isCollapse" class="toggle-btn backward" (click)="collapseSidebar()">
+        <button *ngIf="isCollapse" class="toggle-btn backward" (click)="openSidebar()">
 
         </button>
     </div>

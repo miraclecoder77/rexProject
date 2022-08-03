@@ -1,0 +1,111 @@
+<div class="layout">
+    <div class="wrapper">
+        <div class="overview-header">
+            <h3>TEST Overview</h3>
+            <div>Showing results for: 
+                <span>
+                    <form>
+                        <select name="" id="">
+                            <option >Past 24 Hrs</option>
+                            <option > Last 7 Days</option> 
+                            <option > Last 30 Days </option>
+                        </select>
+                    </form>
+                </span> 
+            </div>
+        </div>
+        <div class="overview">
+            <div class="chart-overview">
+                <div class="transaction-overview">
+                    <h6>Transaction Value Breakdown</h6>
+                    <div class="chart-wrapper">
+                        <div class="chart-screen">
+                            <app-chart></app-chart>
+                        </div>
+                        <div class="chart-legend">
+                            <span>
+                                <div class="box successBg"></div>
+                                <p>Succesful Transactions</p>
+                            </span>
+                            <span>
+                                <div class="box declineBg"></div>
+                                <p>Declined Transactions</p>
+                            </span>
+                            <span>
+                                <div class="box noBg"></div>
+                                <p>No Transactions</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-cashier">
+                    <h6>Top Cashier <img src="../../../assets/images/star.png" style="width: 1.5rem; height:1.5rem;" alt=""> </h6>
+                    <div class="cashierDiv">
+                        <figure>
+                            <img src="../../../assets/images/profile-avatar.svg" alt="">
+                        </figure>
+                        <div>
+                            <p>-</p>
+                            <p>Sold 0 items</p>
+                            <p>Revenue of  ₦0.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="count-overview">
+                    <h6>Transaction Count Breakdown</h6>
+                    <div class="chart-wrapper">
+                        <div class="chart-screen">
+                            <div id="chartdiv" style="width: 100%; height: 100%">
+    
+                            </div>
+                        </div>
+                        <div class="chart-legend">
+                            <span>
+                                <div class="box successBg"></div>
+                                <p>Succesful Transactions</p>
+                            </span>
+                            <span>
+                                <div class="box declineBg"></div>
+                                <p>Declined Transactions</p>
+                            </span>
+                            <span>
+                                <div class="box noBg"></div>
+                                <p>No Transactions</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="price-overview">
+                <div class="price-wrapper">
+                    <div>
+                        <h6>How Customer Paid</h6>
+                        <div class="payment-box">  
+                            <p> TXNS</p>     
+                            <p> 0</p>   
+                            <p> ₦0.00</p>                                      
+                        </div>
+                    </div>
+                    <div style="margin-top:1rem;">
+                        <h6>How Customer Paid</h6>
+                        <div class="product-sold">
+                            <div class="payment-box">  
+                                <p>-</p>
+                                <p>0 units</p>
+                                <p>Highest Quantity</p>
+                            </div>
+                            <div class="payment-box">  
+                                <p>-</p>  
+                                <p> ₦0.00</p>     
+                                <p>Highest Value</p>                                
+                            </div>
+                        </div>
+                    </div>
+                    <h6 style="margin-top: 1rem ;"> Top Customers</h6>
+                    <div class="customer-box">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

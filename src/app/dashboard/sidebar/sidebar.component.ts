@@ -14,14 +14,14 @@ export class SidebarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openSidebar() {
+  collapseSidebar() {
     this.layout = document.getElementById('layout').style.width = "3rem";
     this.layout = document.getElementById('layout').style.paddingTop = "7rem";
     this.layout = document.getElementById('img').style.marginLeft = "1rem";
     this.isCollapse = !this.isCollapse;
     this.showEl = !this.showEl;
   }
-  collapseSidebar() {
+  openSidebar() {
     this.layout = document.getElementById('layout').style.width = "16rem";
     this.isCollapse = !this.isCollapse;
     this.showEl = !this.showEl;

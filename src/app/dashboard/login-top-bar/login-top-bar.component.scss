@@ -1,0 +1,47 @@
+.layout {
+  padding: 1.5rem 1rem;
+}
+
+.top-bar {
+  display: flex;
+}
+
+.profile {
+  background: url(../../../assets/images/pencil-icon.61718dadd3262ca13483.svg);
+  background-repeat: no-repeat;
+  padding-right: 10px;
+}
+
+.profile p {
+  margin-left: 22px;
+}
+
+.logout {
+  background: url(../../../assets/images/logout.2d52041d512593734003.svg);
+  background-repeat: no-repeat;
+  padding-left: 6px;
+}
+
+.logout p {
+  margin-left: 16px;
+  padding-right: 9px;
+  border-right: 1px solid black;
+}
+
+.admin {
+  margin-left: 15px;
+}
+
+.log-img {
+  margin-left: 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+}
+ 
+@media only screen and (min-width: 1440px) {
+  .top-bar {
+  
+  }
+}

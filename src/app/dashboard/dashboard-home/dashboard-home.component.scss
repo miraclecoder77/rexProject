@@ -78,22 +78,30 @@ padding: 1.5rem;
     margin-top: 1rem;
 }
 .cashierDiv {
-    margin-top: 1rem;
     display: grid;
     grid-template-columns: 30% 70%;
+    height: 6rem;
+    width: 100%;
     figure {
         width: 100%;
         height: 100%;
-        display: grid;
-        place-content: center;
+        display: flex;
+        align-items: flex-start;
+        border-right: 1px solid #f0f0f0 ;
+        img {
+            margin-left: 3rem;
+        }
     }
     div {
         width: 100%;
         height: 100%;
         display: flex;
+        justify-content: center;
         padding-left: 1rem;
         flex-direction: column;
-        border-left: 1px solid grey;
+        p {
+            margin: 0;
+        }
     }
 }
 .count-overview {
@@ -172,6 +180,13 @@ padding: 1.5rem;
         background: #fff;
         border-radius: 1rem;
     }
+    .sub-p {
+        font-size: .75rem;
+    }
+    p {
+        font-weight: 800;
+        font-size: 1rem;
+    }
 }
 
 
@@ -191,5 +206,8 @@ padding: 1.5rem;
     }
     .price-wrapper {
         padding: 2rem;
+    }
+    .cashierDiv figure img {
+        margin-left: 5rem;
     }
 }

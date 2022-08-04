@@ -45,7 +45,7 @@ h4 {
   font-size: 1.3rem;
 }
 
-.btn {
+.card-btn {
   margin-top: 1rem;
   color: #950007;
   background: #fff;
@@ -54,6 +54,9 @@ h4 {
   font-size: .875rem;
   font-weight: bold;
   line-height: 1.5;
+  transition: all 0.4s ease-in-out 0s;
+  border: none;
+  border-radius: 8px;
 
   &:hover {
     background: #950007;
@@ -62,6 +65,7 @@ h4 {
     margin-top: 1rem;
     border-radius: 8px;
     width: 100%;
+    transition: all 0.4s ease-in-out 0s;
   }
 }
 

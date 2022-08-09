@@ -8,6 +8,7 @@
     height: 100vh;
     width: 100%;
   }
+
   .login-section{
     display: flex;
     align-items: center;
@@ -15,6 +16,7 @@
     min-width: 25%;
     min-height: 35%;
   }
+
   .header {
     margin-top: 3rem;
     display: flex;
@@ -52,37 +54,26 @@
     font-weight: bold;
     font-size: 17px;
   }
-  
+
+  .form-section {
+    position: relative;
+  }
+
+  .dialval {
+    pointer-events: none;
+  }
+
   input {
     background-color: #f0f0f0;
     min-height: 3.1rem;
     border-radius: 0.3125rem;
     margin-bottom: 0.3125rem;
+    padding: 5px 10px;
     border: none;
+    outline: none;
     width: 100%;
   }
-  //input and label
-  .float-container {
-    border: solid 1px #ccc;
-    padding: 0 8px;
-    position: relative;
-  }
-  .float-container input {
-    border: none;
-    font-size: 16px;
-    margin: 16px 0 10px;
-    outline: 0;
-  }
-  label {
-    font-size: 16px;
-    position: absolute;
-    transform-origin: top left;
-    transform: translate(0, 16px) scale(1);
-    transition: all .1s ease-in-out;
-  }
-  .float-container.active label {
-    transform: translate(0, 4px) scale(.75);
-  }
+
   a {
     color: red;
   }
@@ -95,6 +86,7 @@
     place-content: center;
     grid-template-columns: 1fr 2fr;
     border-radius: 0.75rem 0.75rem 0.75rem 0;
+    transition: all .3s ease-out;
     img {
       padding-left: 30%;
       display: none;
@@ -109,10 +101,10 @@
     opacity: 1;
     img {
       display: initial;
-      animation: icon_left .8s  ;
+      transition: all .3s ease-out;
+      animation: icon_left .7s;
     }
     @keyframes icon_left {
-      // from {margin-left: 20%;} to { margin-left: 30%;}
       100% {transform: translateX(2rem);}
     }
     span {

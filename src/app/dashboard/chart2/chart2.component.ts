@@ -1,4 +1,4 @@
-import { Component, OnInit, NgZone } from '@angular/core';
+import { Component, OnInit, NgZone  } from '@angular/core';
 
 // amCharts imports
 import * as am4core from "@amcharts/amcharts4/core";
@@ -6,11 +6,12 @@ import * as am4charts from "@amcharts/amcharts4/charts";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 
 @Component({
-  selector: 'app-chart',
-  templateUrl: './chart.component.html',
-  styleUrls: ['./chart.component.scss']
+  selector: 'app-chart2',
+  templateUrl: './chart2.component.html',
+  styleUrls: ['./chart2.component.scss']
 })
-export class ChartComponent implements OnInit {
+export class Chart2Component implements OnInit {
+
   chart: am4charts.XYChart;
 
   constructor(private zone: NgZone) {

@@ -1,3 +1,6 @@
+*{
+    color: #1a1a1ab8;
+}
 .layout {
     width: 100%;
     height: 100%;   
@@ -87,6 +90,16 @@ thead th {
 .table-pagination {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+.pageDropdown-wrapper {
+
+}
+// download cv button
+.download-btn {
+    margin-top: 1rem;
+    background: #f9f9f9;
+    width: max-content;
+    padding: .5rem;
 }
 
 @media only screen and (min-width: 478px) {

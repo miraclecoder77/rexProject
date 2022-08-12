@@ -1,0 +1,23 @@
+<div class="labelled-dropdown-container">
+    <span class="label">{{ dropdownParameters.label }}:</span>
+    <div class="labelled-dropdown">
+        <div class="label-container" (click)="manageDropdown()">
+            <label for="content" [title]="currentItem.key">{{
+                currentItem.key
+            }}</label>
+            <img
+                src="../../../../assets/images/arrow.svg"
+                alt="dropdown arrow"
+            />
+        </div>
+        <ul class="dropdown-content" [class.visible]="open">
+            <li
+                class="dropdown-content__item"
+                *ngFor="let item of dropdownParameters.items"
+                (click)="onItemSelected(item)"
+            >
+                {{ item.key }}
+            </li>
+        </ul>
+    </div>
+</div>

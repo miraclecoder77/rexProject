@@ -1,0 +1,170 @@
+<div *ngIf="field.visible !== false" [ngSwitch]="field.type">
+  <!-- CHECKBOX -->
+  <div *ngSwitchCase="0">
+    <div
+      class="checkbox-container"
+      style="margin-bottom: 20px; padding-left: 2px"
+    >
+      <input
+        id="{{ field.name }}"
+        [attr.data-test]="field.name"
+        name="{{ field.name }}"
+        type="checkbox"
+        [formControl]="control"
+      />
+      <label for="{{ field.name }}">{{
+        field.displayValue ? field.displayValue : (field.name | sentenceCase)
+      }}</label>
+    </div>
+  </div>
+
+  <!-- SELECT DROPDOWN -->
+  <div *ngSwitchCase="2">
+    <div class="field-container" data-test="field-container">
+      <label class="field three">
+        <select
+          class="field-select"
+          type="text"
+          id="{{ field.name }}"
+          [attr.data-test]="field.name"
+          name="{{ field.name }}"
+          [formControl]="control"
+        >
+          <option value="" disabled>Choose...</option>
+          <option
+            *ngFor="let option of field.options | keyvalue"
+            [value]="option.value"
+          >
+            {{ option.key }}
+          </option>
+        </select>
+        <span class="field-placeholder">{{
+          field.displayValue ? field.displayValue : (field.name | sentenceCase)
+        }}</span>
+      </label>
+    </div>
+  </div>
+
+  <!-- TEXTAREA -->
+  <div *ngSwitchCase="3">
+    <div class="field-container" data-test="field-container">
+      <label class="field">
+        <textarea
+          name="{{ field.name }}"
+          id="{{ field.name }}"
+          [attr.data-test]="field.name"
+          required
+          class="field-textarea"
+          [formControl]="control"
+        ></textarea>
+        <span class="field-placeholder">{{
+          field.displayValue ? field.displayValue : (field.name | sentenceCase)
+        }}</span>
+      </label>
+    </div>
+  </div>
+
+  <!-- TEXT FIELD -->
+  <div *ngSwitchCase="4">
+    <div class="field-container" data-test="field-container">
+      <label class="field three">
+        <input
+          type="text"
+          name="{{ field.name }}"
+          id="{{ field.name }}"
+          [attr.data-test]="field.name"
+          required
+          class="field-input"
+          [formControl]="control"
+        />
+        <span class="field-placeholder">{{
+          field.displayValue ? field.displayValue : (field.name | sentenceCase)
+        }}</span>
+      </label>
+    </div>
+  </div>
+
+  <!-- NUMBER FIELD -->
+  <div *ngSwitchCase="5">
+    <div class="field-container" data-test="field-container">
+      <label class="field three">
+        <input
+          type="text"
+          required
+          class="field-input"
+          name="{{ field.name }}"
+          id="{{ field.name }}"
+          [attr.data-test]="field.name"
+          onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+          [formControl]="control"
+        />
+        <span class="field-placeholder">{{
+          field.displayValue ? field.displayValue : (field.name | sentenceCase)
+        }}</span>
+      </label>
+    </div>
+  </div>
+
+  <!-- PASSWORD FIELD -->
+  <div *ngSwitchCase="6">
+    <div class="field-container" data-test="field-container">
+      <label class="field three">
+        <input
+          type="password"
+          required
+          class="field-input"
+          name="{{ field.name }}"
+          id="{{ field.name }}"
+          [attr.data-test]="field.name"
+          autocomplete="autocomplete_off_hack_xfr4!k"
+          [formControl]="control"
+          #password
+        />
+        <span class="field-placeholder">{{
+          field.displayValue ? field.displayValue : (field.name | sentenceCase)
+        }}</span>
+        <div
+          class="eye slash"
+          [id]="field.name + 'eye'"
+          (click)="togglePassword(field.name)"
+        >
+          <div></div>
+          <div></div>
+        </div>
+      </label>
+    </div>
+  </div>
+
+  <!-- INTL PHONE NUMBER FIELD -->
+
+  <div *ngSwitchCase="7">
+    <div class="field-container" data-test="field-container">
+      <label class="field four">
+        <input
+          type="text"
+          ng2TelInput
+          [ng2TelInputOptions]="{
+            initialCountry: 'auto',
+            autoPlaceholder: 'off',
+            autoHideDialCode: false,
+            separateDialCode: false,
+            nationalMode: true,
+            formatOnDisplay: false,
+            onlyCountries: ['NG', 'GH', 'KE']
+          }"
+          class="field-input"
+          name="{{ field.name }}"
+          id="{{ field.name }}"
+          [attr.data-test]="field.name"
+          [formControl]="control"
+          (hasError)="hasError($event)"
+          (intlTelInputObject)="telInputObject($event)"
+        />
+
+        <span class="field-placeholder">{{
+          field.displayValue ? field.displayValue : (field.name | sentenceCase)
+        }}</span>
+      </label>
+    </div>
+  </div>
+</div>

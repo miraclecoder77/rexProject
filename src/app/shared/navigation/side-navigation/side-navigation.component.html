@@ -1,0 +1,24 @@
+<div class="sidenav" data-test="sidenav">
+    <img
+        src="../../../../assets/images/App-Logo.svg"
+        class="sidenav-image"
+        alt="logo"
+    />
+
+    <nav class="sidenav-nav">
+        <ul class="sidenav-nav__nav-items">
+            <li
+                *ngFor="let nav of navConfig"
+                class="sidenav-nav__nav-item"
+                [routerLinkActive]="'active'"
+                [routerLink]="nav.url"
+            >
+                <svg class="icon">
+                    <use [attr.xlink:href]="nav.iconUrl"></use>
+                </svg>
+
+                <a class="sidenav-nav__nav-item-link">{{ nav.name }}</a>
+            </li>
+        </ul>
+    </nav>
+</div>

@@ -1,0 +1,21 @@
+<div class="topnav">
+  <div class="top-nav-wrapper">
+    <div class="topnav-container">
+      <span class="topnav-gravatar">{{ initials }}</span>
+      <div class="topnav-container-details">
+        <h4>{{ user.firstName }} {{ user.lastName }}</h4>
+        <span>{{ user.role }}</span>
+      </div>
+      <div style="height: 100%; display: flex; align-items: center">
+        <svg style="width: 35px; height: 26px">
+          <use
+            xlink:href="../../../../assets/icons/sprite.svg#arrow-down-icon"
+          ></use>
+        </svg>
+      </div>
+      <div class="topnav-container-dropdown">
+        <a *ngFor="let link of links" (click)="linkClicked(link)">{{ link }}</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+
+<div class="alert__stack">
+  <div *ngFor="let alert of alerts"  @fade class="{{cssClass(alert)}}">
+
+
+      <span [innerHTML]="alert.message"></span>
+      <a class="close" (click)="removeAlert(alert)">&times;</a>
+  
+  </div>
+
+</div>

@@ -1,0 +1,18 @@
+<div class="file-upload-control">
+  <img
+    src="https://assetslogos.s3.eu-west-1.amazonaws.com/frontendassets/icons/icon__paper__clip.svg"
+    alt="file clip"
+    class="file-upload-control__image"
+  />
+  <div class="file-upload-control__name">
+    <span title="{{ file?.name || 'Browse Files' }}">{{
+      file?.name || "Browse Files"
+    }}</span>
+  </div>
+  <button
+    class="btn btn-white file-upload-control__action no-margin-r"
+    (click)="selectFile()"
+  >
+    Upload
+  </button>
+</div>

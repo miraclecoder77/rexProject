@@ -1,4 +1,4 @@
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,12 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AllCustomersComponent implements OnInit {
   customerId:any
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute,
+              private router: Router) { }
 
   ngOnInit(): void {
         // get the id
         this.route.paramMap.subscribe(params => {
-          this.customerId = params.get('id')
+          this.customerId = params.get('id');
         })
   }
 

@@ -1,0 +1,132 @@
+.layout {
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem;
+    padding-top: 2rem;
+}
+.navigate {
+    text-decoration: none;
+    border: 1px solid #afafaf;
+    border-radius: 4px;
+    margin: auto;
+    padding: 0.625rem 1.25rem 0.625rem 3rem;
+    color: #afafaf;
+    img {
+        margin-right: 1rem;
+    }
+}
+.user-header {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+.user-name span {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #0000001f;
+    border-radius: 6px;
+    color: #1a1a1a8a;
+    font-weight: bold;
+}
+.suspend-btn {
+    color: #fff;
+    background: #ed1c25;
+    padding: 7.5px 30px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin: 0 10px;
+}
+.nav-pills {
+    margin: 2rem 0px;
+    display: flex;
+}
+.pill {
+    width: 10rem;
+    padding: .5rem;
+    font-size: .8rem;
+    text-align: center;
+    text-decoration: none;
+    color: #585858;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+}
+.active {
+    background: #ed1c25;
+    color: #fff;
+    z-index: 12;
+}
+.dataOverview-section {
+    margin: 2rem 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 87%;
+    flex-wrap: wrap;
+}
+.customerData-wrapper {
+   display: flex;
+   flex-direction: column; 
+}
+.transaction-display {
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 1rem;
+    padding: 2.1rem 1.5rem 1.5rem;
+}
+.display-box {
+    width: 20%;
+    text-align: center;
+}
+h4 {
+    font-size: 1rem;
+    color: #585858;
+}
+h5 {
+    font-size: .875rem;
+}
+p {
+    font-size: .87rem;
+    font-family: roboto;
+}
+
+.hr {
+    margin: 2rem 0px;
+}
+.customerDetail-wrapper {
+    width: 25rem;
+    height: fit-content;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: #f0f0f0;
+}
+.customerDetail__header {
+    margin-bottom: 1.5rem;
+}
+.customerDetail__info span {
+    color: #13a500;
+    text-decoration: underline;
+    margin-left: 2rem;
+}
+.customerDetail-wrapper hr {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+.customerDetail__contact {
+    display: flex;
+    gap: 2rem;
+}
+.customerDetail__contact span {
+    display: flex;
+    gap: .5rem;
+}
+
+
+@media only screen and (min-width: 1046px)  {
+    .dataOverview-section {
+        grid-template-columns: 1fr max-content;
+        gap: 1rem;
+    }
+}

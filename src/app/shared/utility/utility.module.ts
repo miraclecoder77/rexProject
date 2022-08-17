@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoaderComponent } from './loader/loader.component';
 import { LabelledDropdownComponent } from './labelled-dropdown/labelled-dropdown.component';
-import { PermissionDirective } from '@ga/core';
+// import { PermissionDirective } from '@ga/core';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
-import { CustomCurrencyPipe } from './pipes/custom-currency.pipe';
+// import { CustomCurrencyPipe } from './pipes/custom-currency.pipe';
 import { FormatNumberPipe } from './pipes/format-number.pipe';
 import { SanitizeOperationTypePipe } from './pipes/sanitize-operation-type.pipe';
 
@@ -16,7 +16,7 @@ import { SanitizeOperationTypePipe } from './pipes/sanitize-operation-type.pipe'
         CapitalizePipe,
         FormatNumberPipe,
         //PermissionDirective,
-        CustomCurrencyPipe,
+        // CustomCurrencyPipe,
     ],
     imports: [CommonModule],
     exports: [
@@ -26,7 +26,7 @@ import { SanitizeOperationTypePipe } from './pipes/sanitize-operation-type.pipe'
         CapitalizePipe,
         FormatNumberPipe,
         //PermissionDirective,
-        CustomCurrencyPipe,
+        // CustomCurrencyPipe,
     ],
 })
 export class UtilityModule {}

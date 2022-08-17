@@ -11,7 +11,7 @@ import { StoreComponent } from './store.component';
   ],
   imports: [
     CommonModule,
-    StoreRoutingModule
+    StoreRoutingModule,
   ]
 })
 export class StoreModule { }

@@ -12,7 +12,7 @@ import { FiltersComponent } from './filters/filters.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { DownloadCsvComponent } from './download-csv/download-csv.component';
 import { UtilityModule } from '@ga/utility';
-import { CustomCurrencyPipe } from '../utility/pipes/custom-currency.pipe';
+// import { CustomCurrencyPipe } from '../utility/pipes/custom-currency.pipe';
 import { StyleCellDirective } from './style-cell.directive';
 
 @NgModule({
@@ -36,7 +36,7 @@ import { StyleCellDirective } from './style-cell.directive';
         CurrencyPipe,
         DatePipe,
         PercentPipe,
-        CustomCurrencyPipe,
+        // CustomCurrencyPipe,
         StyleCellDirective,
     ],
 })

@@ -1,8 +1,8 @@
 import { DatePipe, PercentPipe } from '@angular/common';
 import { Pipe, PipeTransform } from '@angular/core';
-import { AuthService } from '@ga/core';
+// import { AuthService } from '@ga/core';
 import { Subscription } from 'rxjs';
-import { CustomCurrencyPipe } from '../utility/pipes/custom-currency.pipe';
+// import { CustomCurrencyPipe } from '../utility/pipes/custom-currency.pipe';
 import { PipeFormat } from './model';
 import { User } from '@ga/models';
 
@@ -24,14 +24,12 @@ export class FormatCellPipe implements PipeTransform {
     constructor(
         private datePipe: DatePipe,
         private percentPipe: PercentPipe,
-        private customCurrency: CustomCurrencyPipe,
-        private authService: AuthService
     ) {
-        this.subscriptions.push(
-            this.authService.currentUser$.subscribe(
-                // (user: User) => (this.country = user.country)
-            )
-        );
+        // this.subscriptions.push(
+        //     this.authService.currentUser$.subscribe(
+        //         // (user: User) => (this.country = user.country)
+        //     )s
+        // );
     }
 
     transform(value: any, format: PipeFormat) {
@@ -58,7 +56,7 @@ export class FormatCellPipe implements PipeTransform {
 
         // If the format is CURRENCY
         if (format === 1) {
-            return this.customCurrency.transform(value);
+            // return this.customCurrency.transform(value);
         }
 
         // If the format is DATE

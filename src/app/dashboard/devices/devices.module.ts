@@ -5,6 +5,7 @@ import { DevicesRoutingModule } from './devices-routing.module';
 import { DevicesComponent } from './devices.component';
 
 
+
 @NgModule({
   declarations: [
     DevicesComponent

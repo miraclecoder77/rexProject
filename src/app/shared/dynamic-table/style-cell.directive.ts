@@ -102,7 +102,7 @@ export class StyleCellDirective implements OnInit {
                 return 'third';
 
             default:
-                return;
+                return '';
         }
     }
 }

@@ -132,14 +132,16 @@ export interface Client {
 }
 
 export interface Branch {
-    branchName: string;
-    id: number;
+    branchName?: string;
+    id?: number;
 
-    branchLocation: string;
-    createdAt: Date;
-    regionId: number;
-    regionName: string;
-    updatedAt: Date;
+    branchLocation?: string;
+    createdAt?: Date;
+    regionId?: number;
+    regionName?: string;
+    updatedAt?: Date;
+    firstName: string;
+    lastName: string;
 }
 
 export interface Region {

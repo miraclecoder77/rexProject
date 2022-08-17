@@ -1,8 +1,13 @@
+import { ReportHomeComponent } from './report-home/report-home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ReportsComponent } from './reports.component';
 
-const routes: Routes = [{ path: '', component: ReportsComponent }];
+const routes: Routes = [{ path: '', component: ReportsComponent, 
+        children: [
+          {path: '', redirectTo: 'reports', pathMatch: 'FULL'},
+          {path: 'reports', component: ReportHomeComponent },
+        ]}];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

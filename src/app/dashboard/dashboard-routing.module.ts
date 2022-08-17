@@ -13,7 +13,8 @@ const routes: Routes = [{ path: '', component: DashboardComponent ,
       { path: 'store', loadChildren: () => import('./store/store.module').then(m => m.StoreModule) },
       { path: 'staff', loadChildren: () => import('./user/user.module').then(m => m.UserModule) },
       { path: 'paynow', loadChildren: () => import('./paynow/paynow.module').then(m => m.PaynowModule) },
-      { path: 'customers', loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule) }
+      { path: 'customers', loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule) },
+
   ]
 }
 ];

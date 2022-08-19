@@ -1,29 +1,13 @@
-.layout {
-    width: 100%;
-    height: 100%;
-    padding: 0 2rem;
-    padding-top: 2rem;
-}
 .wrapper {
-    margin-top: 3rem;
-}
-.navigate {
-    text-decoration: none;
-    border: 1px solid #afafaf;
-    border-radius: 4px;
-    margin: auto;
-    padding: 0.625rem 1.25rem 0.625rem 3rem;
-    color: #afafaf;
-    img {
-        margin-right: 1rem;
-    }
+    width: 100%;
+    background: #fff;
+    padding: 1rem;
 }
 .content {
     background: #fff;
     padding: 2rem;
     border-radius: .5rem;
     margin-top: 1.5rem;
-    color: #1a1a1ab8;
 }
 // the button layout 
 .btn-layout {
@@ -82,20 +66,9 @@ thead th {
     overflow: hidden;
     white-space: nowrap;
     padding-right: 1.25rem;
+    color: #1a1a1ab8;
 }
-.open-btn {
-    color: #ed1c25;
-    background: #fff;
-    border: 1px solid #ed1c25;
-    transition: all 0.5s;
-    width: 4rem ;
-    border-radius: .2rem;
-}
-.open-btn:hover {
-    color: #ed1c25;
-    background: #fbcacc;
-    border: 1px solid #fbcacc;
-}
+
 // table pagination 
 .table-pagination {
     display: grid;
@@ -112,5 +85,6 @@ thead th {
 @media only screen and (min-width: 478px) {
     .layout{
         height: 100vh;
+        padding: 9% 3rem 5% 3rem;
     }
 }

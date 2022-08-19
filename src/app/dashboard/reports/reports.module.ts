@@ -8,6 +8,8 @@ import { SalesReportComponent } from './sales-report/sales-report.component';
 import { SettlementsComponent } from './settlements/settlements.component';
 import { BillingsComponent } from './billings/billings.component';
 import { CashiersComponent } from './cashiers/cashiers.component';
+import { FullBreakdownComponent } from './settlements/full-breakdown/full-breakdown.component';
+import { SettlementOverviewComponent } from './settlements/settlement-overview/settlement-overview.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { CashiersComponent } from './cashiers/cashiers.component';
     SalesReportComponent,
     SettlementsComponent,
     BillingsComponent,
-    CashiersComponent
+    CashiersComponent,
+    FullBreakdownComponent,
+    SettlementOverviewComponent
   ],
   imports: [
     CommonModule,

@@ -1,1 +1,23 @@
-<p>settlements works!</p>
+<main class="layout">
+    <a routerLink="../report" class="navigate">
+        <img src="../../../../assets/images/back.png" alt="">
+         return to report
+     </a>
+     <div class="wrapper">
+        <h3>Settlement Report</h3>
+        <span>Here you monitor your settlements report.</span>
+        <ul class="nav-btn-wrapper">
+            <li>
+                <a class="nav-btn" routerLink="settlement"  routerLinkActive="active">Dashedboard</a>
+            </li>
+            <li>
+                <a  class="nav-btn" routerLink="settlement-reports" routerLinkActive="active">Full Breakdown</a>
+            </li>           
+           
+           
+        </ul>
+        <div class="content">
+            <router-outlet></router-outlet>
+        </div>
+     </div>
+</main>

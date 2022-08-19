@@ -1,3 +1,5 @@
+import { SettlementOverviewComponent } from './settlements/settlement-overview/settlement-overview.component';
+import { FullBreakdownComponent } from './settlements/full-breakdown/full-breakdown.component';
 import { SalesReportComponent } from './sales-report/sales-report.component';
 import { CashiersComponent } from './cashiers/cashiers.component';
 import { BillingsComponent } from './billings/billings.component';
@@ -13,7 +15,12 @@ const routes: Routes = [{ path: '', component: ReportsComponent,
           {path: 'report', component: ReportHomeComponent },
           {path:'sales-report', component: SalesReportComponent},
           {path: 'billings', component: BillingsComponent},
-          {path:'settlements', component: SettlementsComponent},
+          {path:'settlements', component: SettlementsComponent,
+            children: [
+              {path: "", redirectTo: "settlement", pathMatch: 'FULL'},
+              { path: 'settlement', component: SettlementOverviewComponent },
+              {path: 'settlement-reports', component: FullBreakdownComponent}
+            ]},
           {path: 'cashiers', component: CashiersComponent}
         ]}];
 

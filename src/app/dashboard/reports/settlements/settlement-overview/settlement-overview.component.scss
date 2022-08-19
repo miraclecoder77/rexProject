@@ -1,0 +1,48 @@
+.layout {
+    background: #fff;
+    padding: 2rem .75rem;
+}
+.heading {
+    margin: 2rem 0px;
+}
+.overview {
+    height: 22rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.settlement-wrapper {
+    flex: 1;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.settlement-month {
+    padding-top: 1rem;
+}
+.settlement-year {
+    border-left: 1px solid #f2f2f2;
+    padding-left: .75rem;
+    padding-top: 1rem;
+}
+.pending-wrapper {
+    flex: 1;
+    border-left: 1px solid #f2f2f2;
+    padding-left: .75rem;
+}
+.pending-container {
+    background: #f9f9f9;
+    padding: 1rem;
+    width: fit-content;
+    span {
+        color: #13A500;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+}
+.btn {
+    background: #13A500;
+    border: 1px solid #13A500;
+    color: #fff;
+    border-radius: .25rem;
+}

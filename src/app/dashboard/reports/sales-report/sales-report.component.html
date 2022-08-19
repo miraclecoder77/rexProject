@@ -1,1 +1,100 @@
-<p>sales-report works!</p>
+<main class="layout">
+    <a routerLink="../report" class="navigate">
+        <img src="../../../../assets/images/back.png" alt="">
+         return to report
+     </a>
+     <div class="wrapper">
+        <div class="header">
+            <h3>Sales Report</h3>
+            <span>Here you monitor your sales report.</span>
+        </div>
+        <div class="content">
+            <!-- the button layout -->
+            <div class="btn-layout">
+                <button class="filter-btn btn">
+                    filter Table 
+                    <img src="	https://assetslogos.s3-eu-west-1.amazonaws.com/frontendassets/icons/icon__filter__red.svg" class="img-fluid" alt="filter logo">
+                </button>
+            </div>
+            <!-- the table data section -->
+            <div class="data-Container">
+                <div class="table-container">
+                    <table class="table ">
+                        <thead >
+                            <tr>
+                                <th>Order Number</th>
+                                <th>Store</th>
+                                <th>Price</th>
+                                <th>Cashier</th>
+                                <th>Payment Status</th>
+                                <th>Date and Time</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-body">
+                            <tr>
+                                <td>6035226111502202236</td>
+                                <td>Mama 'N' Shop</td>
+                                <td>₦ 200.00</td>
+                                <td>Adedotun</td>
+                                <td>Sucess</td>
+                                <td>	Feb 22, 2022, 2:02 PM</td>
+                                <td>
+                                    <button class="open-btn"  [routerLink]="['../customer']" >open</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6035226111502202236</td>
+                                <td>Mama 'N' Shop</td>
+                                <td>₦ 200.00</td>
+                                <td>Adedotun</td>
+                                <td>Sucess</td>
+                                <td>Feb 22, 2022, 2:02 PM</td>
+                                <td>
+                                    <button class="open-btn"  [routerLink]="['../customer']" >open</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6035226111502202236</td>
+                                <td>Mama 'N' Shop</td>
+                                <td>₦ 200.00</td>
+                                <td>Adedotun</td>
+                                <td>Sucess</td>
+                                <td>Feb 22, 2022, 2:02 PM</td>
+                                <td>
+                                    <button class="open-btn"  [routerLink]="['../customer']" >open</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6035226111502202236</td>
+                                <td>Mama 'N' Shop</td>
+                                <td>₦ 200.00</td>
+                                <td>Adedotun</td>
+                                <td>Sucess</td>
+                                <td>Feb 22, 2022, 2:02 PM</td>
+                                <td>
+                                    <button class="open-btn"  [routerLink]="['../customer']" >open</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-pagination">
+                    <div class="pageDropdown-wrapper">
+                        items per page: 10 Items
+                    </div>
+                    <div class="pageNumber-wrapper">
+
+                    </div>
+                    <div>
+                        Showing 1-10 of 12
+                    </div>
+                </div>
+                <div class="download-btn">
+                    <img src="../../../assets/images/download-icon__red.svg" alt="">
+                    Download as CSV
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

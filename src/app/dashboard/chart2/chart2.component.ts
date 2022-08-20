@@ -19,7 +19,7 @@ export class Chart2Component implements OnInit {
   }
 
   ngOnInit(): void {
-    var chart = am4core.create("chart", am4charts.PieChart);
+    var chart = am4core.create("chartdiv", am4charts.PieChart);
 
     // Add and configure Series
     var pieSeries = chart.series.push(new am4charts.PieSeries());
@@ -59,6 +59,7 @@ export class Chart2Component implements OnInit {
     this.zone.runOutsideAngular(() => {
       if (this.chart) {
         this.chart.dispose();
+        // this.chart = null
       }
     });
   }

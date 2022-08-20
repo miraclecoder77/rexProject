@@ -1,1 +1,32 @@
-<p>shop works!</p>
+<div class="layout">
+    <a routerLink="../all-store" class="navigate">
+        <img src="../../../../assets/images/back.png" alt="">
+         return to customer list
+     </a>
+     <div class="header">
+        <div class="header__initials">
+            <h4>S</h4>
+        </div>
+        <div class="header__details">
+            <h2>Sunday Mann</h2>
+            <div class="statusDiv">
+                <p class="date-status">created: Aug 11, 2022</p>
+                <span class=" badge">Active</span>
+            </div>
+        </div>
+     </div>
+     <ul class="nav-btn-wrapper">
+        <li>
+            <a class="nav-btn" routerLink="transactions"  routerLinkActive="active">Transactions</a>
+        </li>
+        <li>
+            <a  class="nav-btn" routerLink="details" routerLinkActive="active">My Shop Details</a>
+        </li>   
+        <li>
+            <a  class="nav-btn" routerLink="inventory" routerLinkActive="active">Inventory</a>
+        </li>                   
+    </ul>
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+</div>

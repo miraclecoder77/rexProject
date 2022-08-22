@@ -1,0 +1,106 @@
+.layout {
+    height: 100%;
+    width: 100%;
+    padding:0px 2rem;
+    padding-top: 2rem;
+}
+.navigate {
+    text-decoration: none;
+    border: 1px solid #afafaf;
+    border-radius: 4px;
+    margin: auto;
+    padding: 0.625rem 1.25rem 0.625rem 3rem;
+    color: #afafaf;
+    img {
+        margin-right: 1rem;
+    }
+}
+.headerDiv {
+    margin-top: 4rem;
+    margin-bottom: 2.5rem;
+    h2 {
+        margin: 0;
+        font-size: 1.5em;
+    }
+}
+.statusDiv {
+    margin-top: .5rem;
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    p {
+        color: grey;
+        margin: 0px;
+    }
+    span {
+        display: grid;
+        place-content: center;
+        font-size: .75rem;
+        border-radius: 6.25rem;
+        padding:.31rem  .625rem;
+    }
+    .badge {
+        color: #13a500;
+        background: #c8eac4;
+    }
+}
+.contentDiv {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+}
+.sales-overview {
+    background: #fff;
+    border-radius: 4px;
+    height: 31.25rem;
+    padding: 1.5rem;
+    max-width: 100%;
+}
+.overview-details {
+    display: flex;
+    justify-content: space-between;
+    p {
+        margin: .75rem 0px;
+    }
+}
+.heading-5 {
+    font-size: 1.2rem;
+    border-bottom: 0.5px solid #dfdede;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+}
+.product-overview {
+    padding-left: 1.875rem;
+    max-width: 100%;
+}
+.product-header {
+    background: #e7e6e6;
+    border-radius: 4px 4px 0 0;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+    h5 {
+        width: 50%;
+    }
+}
+.product-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 1rem;
+}
+
+
+
+
+@media only screen and (min-width: 768px)   {
+    .layout {
+        height: 100vh;
+    }
+    .sales-overview {
+        width: 33.3%;
+    }
+    .product-overview {
+        width: 66.66%;
+    }
+}

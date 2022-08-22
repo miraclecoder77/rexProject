@@ -1,3 +1,5 @@
+import { SalesReportHomeComponent } from './sales-report/sales-report-home/sales-report-home.component';
+import { SalesDetailComponent } from './sales-report/sales-detail/sales-detail.component';
 import { BillingsHomeComponent } from './billings/billings-home/billings-home.component';
 import { BillingReportComponent } from './billings/billing-report/billing-report.component';
 import { SettlementOverviewComponent } from './settlements/settlement-overview/settlement-overview.component';
@@ -15,7 +17,12 @@ const routes: Routes = [{ path: '', component: ReportsComponent,
         children: [
           {path: '', redirectTo: 'report', pathMatch: 'FULL'},
           {path: 'report', component: ReportHomeComponent },
-          {path:'sales-report', component: SalesReportComponent},
+          {path:'sales-report', component: SalesReportComponent,
+            children: [
+              { path: '', pathMatch: 'full', redirectTo: 'report' },
+              { path: 'report', component: SalesReportHomeComponent },
+              { path: 'detail', component: SalesDetailComponent },
+            ]},
           {path: 'billings', component: BillingsComponent,
             children: [
               { path: '', pathMatch: 'full', redirectTo: 'id' },

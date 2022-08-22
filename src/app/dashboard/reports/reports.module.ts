@@ -12,6 +12,8 @@ import { FullBreakdownComponent } from './settlements/full-breakdown/full-breakd
 import { SettlementOverviewComponent } from './settlements/settlement-overview/settlement-overview.component';
 import { BillingReportComponent } from './billings/billing-report/billing-report.component';
 import { BillingsHomeComponent } from './billings/billings-home/billings-home.component';
+import { SalesDetailComponent } from './sales-report/sales-detail/sales-detail.component';
+import { SalesReportHomeComponent } from './sales-report/sales-report-home/sales-report-home.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { BillingsHomeComponent } from './billings/billings-home/billings-home.co
     FullBreakdownComponent,
     SettlementOverviewComponent,
     BillingReportComponent,
-    BillingsHomeComponent
+    BillingsHomeComponent,
+    SalesDetailComponent,
+    SalesReportHomeComponent
   ],
   imports: [
     CommonModule,

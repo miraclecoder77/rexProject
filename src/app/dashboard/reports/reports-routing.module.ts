@@ -1,3 +1,5 @@
+import { BillingsHomeComponent } from './billings/billings-home/billings-home.component';
+import { BillingReportComponent } from './billings/billing-report/billing-report.component';
 import { SettlementOverviewComponent } from './settlements/settlement-overview/settlement-overview.component';
 import { FullBreakdownComponent } from './settlements/full-breakdown/full-breakdown.component';
 import { SalesReportComponent } from './sales-report/sales-report.component';
@@ -14,7 +16,12 @@ const routes: Routes = [{ path: '', component: ReportsComponent,
           {path: '', redirectTo: 'report', pathMatch: 'FULL'},
           {path: 'report', component: ReportHomeComponent },
           {path:'sales-report', component: SalesReportComponent},
-          {path: 'billings', component: BillingsComponent},
+          {path: 'billings', component: BillingsComponent,
+            children: [
+              { path: '', pathMatch: 'full', redirectTo: 'id' },
+              { path: 'id', component: BillingsHomeComponent },
+              { path: 'report', component: BillingReportComponent },
+            ]},
           {path:'settlements', component: SettlementsComponent,
             children: [
               {path: "", redirectTo: "settlement", pathMatch: 'FULL'},

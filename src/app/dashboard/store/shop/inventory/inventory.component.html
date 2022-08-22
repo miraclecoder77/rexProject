@@ -1,1 +1,68 @@
-<p>inventory works!</p>
+<div class="content">
+    <!-- the button layout -->
+    <div class="btn-layout">
+        <button class="filter-btn btn">
+            filter Table 
+            <img src="	https://assetslogos.s3-eu-west-1.amazonaws.com/frontendassets/icons/icon__filter__red.svg" class="img-fluid" alt="filter logo">
+        </button>
+    </div>
+    <!-- the table data section -->
+    <div class="data-Container">
+        <div class="table-container">
+            <table class="table ">
+                <thead >
+                    <tr>
+                        <th>Device ID</th>
+                        <th>Merchant</th>
+                        <th>Type of device</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                    <tr>
+                        <td>Accelerex</td>
+                        <td> TEST</td>
+                        <td>POS</td>
+                        <td>In-active</td>
+                        <td>
+                            <button class="open-btn"  [routerLink]="['../customer']" >open</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CafeRoyal</td>
+                        <td> TEST</td>
+                        <td>POS</td>
+                        <td>Active</td>
+                        <td >
+                            <button class="open-btn" [routerLink]="['../customer']" >open</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Aunty Dedee's Place</td>
+                        <td> TEST</td>
+                        <td>POS</td>
+                        <td>In-active</td>
+                        <td >
+                            <button class="open-btn" [routerLink]="['../customer']" >open</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-pagination">
+            <div class="pageDropdown-wrapper">
+                items per page: 10 Items
+            </div>
+            <div class="pageNumber-wrapper">
+
+            </div>
+            <div>
+                Showing 1-10 of 12
+            </div>
+        </div>
+        <div class="download-btn">
+            <img src="../../../assets/images/download-icon__red.svg" alt="">
+            Download as CSV
+        </div>
+    </div>

@@ -10,6 +10,8 @@ import { BillingsComponent } from './billings/billings.component';
 import { CashiersComponent } from './cashiers/cashiers.component';
 import { FullBreakdownComponent } from './settlements/full-breakdown/full-breakdown.component';
 import { SettlementOverviewComponent } from './settlements/settlement-overview/settlement-overview.component';
+import { BillingReportComponent } from './billings/billing-report/billing-report.component';
+import { BillingsHomeComponent } from './billings/billings-home/billings-home.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { SettlementOverviewComponent } from './settlements/settlement-overview/s
     BillingsComponent,
     CashiersComponent,
     FullBreakdownComponent,
-    SettlementOverviewComponent
+    SettlementOverviewComponent,
+    BillingReportComponent,
+    BillingsHomeComponent
   ],
   imports: [
     CommonModule,

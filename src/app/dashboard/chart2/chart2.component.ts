@@ -59,7 +59,6 @@ export class Chart2Component implements OnInit {
     this.zone.runOutsideAngular(() => {
       if (this.chart) {
         this.chart.dispose();
-        // this.chart = null
       }
     });
   }

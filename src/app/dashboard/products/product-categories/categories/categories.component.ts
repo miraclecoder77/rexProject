@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./categories.component.scss']
 })
 export class CategoriesComponent implements OnInit {
+  isFilterOpen: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  showFilter(){
+    this.isFilterOpen = !this.isFilterOpen
+  }
 }

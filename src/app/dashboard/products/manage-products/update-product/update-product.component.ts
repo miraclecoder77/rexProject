@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./update-product.component.scss']
 })
 export class UpdateProductComponent implements OnInit {
-
+  isFilterOpen: boolean= false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+  showFilter() {
+    this.isFilterOpen = !this.isFilterOpen
   }
 
 }

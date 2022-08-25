@@ -21,82 +21,63 @@
         border: none !important;
         height: 2.2rem;
     }
-    .btn:focus {
-        box-shadow: none;
-    }
+
 }
-.filter-btn{
-    width: 9rem;
-    background: #f9f9f9;
+// filter button and section layput
+.filterDiv {
+    width: 25rem;
+    background: #fff;
+    position: absolute;
+    z-index: 1000;
+    transform: scale(.85) translateY(3rem) translateX(-1.5rem);  
+    border-radius: 4px; 
+    margin-top: .75rem; 
+    padding: .8rem;
+}
+.filterInput-wrapper {
     display: flex;
-    justify-content: center;
-    gap: .75rem;
-    font-size: 1rem;
-    img {
-        transform: scale(.7); 
-    }
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
 }
+.inputDiv {
+    // flex: 0 0 auto;
+    width: 50%;
+}
+.filter-group{
+    margin-top: .625rem;
+    display: grid;
+}
+.filter-label {
+    color: #1a1a1ab8;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.filter-group select {
+    width: calc(100% - 8px);
+    margin-right: auto;
+}
+.filter-input {
+    outline: none;
+    border-radius: 4px;
+    padding: 5px 0 5px 10px;
+    font-size: .75rem;
+    border: 1px solid #dfdede;
+}
+.filterBtn-group {
+    display: flex;
+    width: 100%;
+}
+.btn-transparent {
+    background: transparent;
+    color: #000;
+    margin-left: auto;
+}
+
+// add customer button
 .addCustomer-btn{
     background: #ed1c25;
     color: #fff;
     width: 9rem;
-}
-// table data container
-.table-container {
-    min-height: 16.43rem ;
-    max-height: 44vh;
-    width: 100%;
-    overflow: auto;
-    // background: wheat;
-}
-.table-section {
-    width: 100%;
-    border-collapse: collapse;
-}
-thead th {
-    padding: 10px 0;
-    text-align: left;
-    background: #f9f9f9;
-    color: #767171;
-    position: sticky;
-    top: 0;
-    font-size: 1rem;
-    z-index: 100;
-}
-.table-body td {
-    max-width: 9.375rem;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    padding-right: 1.25rem;
-}
-.table-body td:nth-child(4) {
-    color: rgb(19, 165, 0);
-}
-.open-btn {
-    color: #ed1c25;
-    background: #fff;
-    border: 1px solid #ed1c25;
-    transition: all 0.5s;
-    width: 4rem ;
-    border-radius: .2rem;
-}
-.open-btn:hover {
-    color: #ed1c25;
-    background: #fbcacc;
-    border: 1px solid #fbcacc;
-}
-// table pagination 
-.table-pagination {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-// download cv button
-.download-btn {
-    margin-top: 1rem;
-    background: #f9f9f9;
-    width: max-content;
-    padding: .5rem;
 }
 
 @media only screen and (min-width: 478px) {

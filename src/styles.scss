@@ -16,3 +16,92 @@
     z-index: 9999;
     background: url(https://rexretail-dev.globalaccelerex.com/assets/images/logo.svg) 50% no-repeat #fff;
 }
+
+// primary button
+.btn-primary {
+   color: #fff !important;
+   background: #ed1c25 !important; 
+}
+.btn__sm {
+    padding: 5px 25px !important;
+}
+.btn {
+    padding: 7.5px 30px ;
+    border-radius: 4px !important;
+    outline: none !important;
+    text-decoration: none !important;
+    margin: 0 10px;
+    position: relative !important;
+}
+.btn:focus {
+    box-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+}
+// filter button
+.filter-btn{
+    width: 9rem;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    gap: .75rem;
+    font-size: 1rem;
+    img {
+        transform: scale(.7); 
+    }
+}
+// table data container
+.table-container {
+    min-height: 16.43rem !important;
+    max-height: 44vh !important;
+    width: 100% !important;
+    overflow: auto !important;
+    // background: wheat;
+}
+.table-section {
+    width: 100% !important;
+    border-collapse: collapse !important;
+}
+thead th {
+    padding: 10px  !important;
+    text-align: left !important;
+    background: #f9f9f9 !important;
+    color: #767171 !important;
+    position: sticky !important;
+    top: 0 !important;
+    font-size: 1rem !important;
+    z-index: 100 !important;
+}
+.table-body td {
+    max-width: 9.375rem !important;
+    text-overflow: ellipsis !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    padding-right: 1.25rem !important;
+}
+
+.open-btn {
+    color: #ed1c25 !important;
+    background: #fff !important;
+    border: 1px solid #ed1c25 !important;
+    transition: all 0.5s !important;
+    width: 4rem !important ;
+    border-radius: .2rem !important;
+}
+.open-btn:hover {
+    color: #ed1c25 !important;
+    background: #fbcacc !important;
+    border: 1px solid #fbcacc !important;
+}
+// table pagination 
+.table-pagination {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+}
+// download cv button
+.download-btn {
+    margin-top: 1rem !important;
+    background: #f9f9f9 !important;
+    width: max-content !important;
+    padding: .5rem !important;
+}

@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -7,6 +8,10 @@ import { ManageProductsComponent } from './manage-products/manage-products.compo
 import { ProductCategoriesComponent } from './product-categories/product-categories.component';
 import { CheckStockComponent } from './check-stock/check-stock.component';
 import { NewProductComponent } from './new-product/new-product.component';
+import { ProductsHomeComponent } from './products-home/products-home.component';
+import { UpdateComponent } from './manage-products/update/update.component';
+import { CategoriesComponent } from './product-categories/categories/categories.component';
+import { UpdateProductComponent } from './manage-products/update-product/update-product.component';
 
 
 @NgModule({
@@ -15,7 +20,11 @@ import { NewProductComponent } from './new-product/new-product.component';
     ManageProductsComponent,
     ProductCategoriesComponent,
     CheckStockComponent,
-    NewProductComponent
+    NewProductComponent,
+    UpdateProductComponent,
+    ProductsHomeComponent,
+    UpdateComponent,
+    CategoriesComponent
   ],
   imports: [
     CommonModule,

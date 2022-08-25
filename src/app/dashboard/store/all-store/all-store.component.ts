@@ -6,9 +6,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AllStoreComponent implements OnInit {
 
+  isFilterOpen: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  showFilter(){
+    this.isFilterOpen = !this.isFilterOpen
   }
 
 }

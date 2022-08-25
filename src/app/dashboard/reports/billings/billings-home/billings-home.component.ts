@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./billings-home.component.scss']
 })
 export class BillingsHomeComponent implements OnInit {
+  isFilterOpen: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  showFilter(){
+    this.isFilterOpen = !this.isFilterOpen
+  }
+  
 
 }

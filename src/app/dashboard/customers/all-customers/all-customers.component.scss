@@ -17,7 +17,6 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
-
   }
   // filter button and section layput
   .filterDiv {
@@ -25,7 +24,7 @@
     background: #fff;
     position: absolute;
     z-index: 1000;
-    transform: scale(.85) translateY(2.3rem) translateX(-2.22rem);  
+    transform:  translateY(2.3rem) translateX(-2.22rem);  
     border-radius: 4px; 
     // margin-top: .75rem; 
     padding: .8rem;

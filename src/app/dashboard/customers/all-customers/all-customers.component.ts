@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./all-customers.component.scss']
 })
 export class AllCustomersComponent implements OnInit {
+  isFilterOpen: boolean = false;
   customerId:any
   constructor(private route: ActivatedRoute,
               private router: Router) { }
@@ -16,6 +17,10 @@ export class AllCustomersComponent implements OnInit {
         this.route.paramMap.subscribe(params => {
           this.customerId = params.get('id');
         })
+  }
+
+  showFilter(){
+    this.isFilterOpen = !this.isFilterOpen
   }
 
 }

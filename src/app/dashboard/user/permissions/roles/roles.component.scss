@@ -21,20 +21,56 @@
       border: none !important;
       height: 2.2rem;
   }
-  .btn:focus {
-      box-shadow: none;
-  }
+
 }
-.filter-btn{
-  width: 9rem;
-  background: #f9f9f9;
+// filter button and section layput
+.filterDiv {
+  width: 25rem;
+  background: #fff;
+  position: absolute;
+  z-index: 1000;
+  transform: scale(.85) translateY(2.3rem) translateX(-2.22rem);  
+  border-radius: 4px; 
+  // margin-top: .75rem; 
+  padding: .8rem;
+}
+.filterInput-wrapper {
   display: flex;
-  justify-content: center;
-  gap: .75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+.inputDiv {
+  // flex: 0 0 auto;
+  width: 50%;
+}
+.filter-group{
+  margin-top: .625rem;
+  display: grid;
+}
+.filter-label {
+  color: #1a1a1ab8;
   font-size: 1rem;
-  img {
-      transform: scale(.7); 
-  }
+  font-weight: 700;
+}
+.filter-group select {
+  width: calc(100% - 8px);
+  margin-right: auto;
+}
+.filter-input {
+  outline: none;
+  border-radius: 4px;
+  padding: 5px 0 5px 10px;
+  font-size: .75rem;
+  border: 1px solid #dfdede;
+}
+.filterBtn-group {
+  display: flex;
+  width: 100%;
+}
+.btn-transparent {
+  background: transparent;
+  color: #000;
+  margin-left: auto;
 }
 .addCustomer-btn{
   background: #ed1c25;

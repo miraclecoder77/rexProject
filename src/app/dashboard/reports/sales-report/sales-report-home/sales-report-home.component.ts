@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sales-report-home.component.scss']
 })
 export class SalesReportHomeComponent implements OnInit {
+  isFilterOpen: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  showFilter (){
+    this.isFilterOpen =!this.isFilterOpen
   }
 
 }

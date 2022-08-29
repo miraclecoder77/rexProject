@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./roles.component.scss']
 })
 export class RolesComponent implements OnInit {
-
+  isFilterOpen: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  showFilter(){
+    this.isFilterOpen = !this.isFilterOpen
+  }
 }

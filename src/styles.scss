@@ -106,3 +106,15 @@ thead th {
     width: max-content !important;
     padding: .5rem !important;
 }
+// navigate back anchor tag 
+.navigate {
+    text-decoration: none;
+    border: 1px solid #afafaf;
+    border-radius: 4px;
+    margin: auto;
+    padding: 0.625rem 1.25rem 0.625rem 3rem;
+    color: #afafaf;
+    img {
+        margin-right: 1rem;
+    }
+}

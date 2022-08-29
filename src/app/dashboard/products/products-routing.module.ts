@@ -3,7 +3,6 @@ import { CategoriesComponent } from './product-categories/categories/categories.
 import { UpdateComponent } from './manage-products/update/update.component';
 import { ProductsHomeComponent } from './products-home/products-home.component';
 import { NewProductComponent } from './new-product/new-product.component';
-import { CheckStockComponent } from './check-stock/check-stock.component';
 import { ProductCategoriesComponent } from './product-categories/product-categories.component';
 import { ManageProductsComponent } from './manage-products/manage-products.component';
 import { NgModule, Component } from '@angular/core';
@@ -26,7 +25,6 @@ const routes: Routes = [{ path: '', component: ProductsComponent,
                       { path: 'product-categories', component: ProductCategoriesComponent },
                       { path: 'categories', component: CategoriesComponent }
                     ]},
-              {path: 'check-stock', component: CheckStockComponent},
               {path: 'new-product', component: NewProductComponent}
            ]},
 

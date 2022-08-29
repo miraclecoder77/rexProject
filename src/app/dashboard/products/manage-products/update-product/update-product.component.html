@@ -6,14 +6,41 @@
       <div class="content">
           <!-- the button layout -->
           <div class="btn-layout">
-              <button class="filter-btn btn">
-                  filter Table 
-                  <img src="	https://assetslogos.s3-eu-west-1.amazonaws.com/frontendassets/icons/icon__filter__red.svg" class="img-fluid" alt="filter logo">
-              </button>
-              <button class="addCustomer-btn btn">
-                  New Product
-              </button>
-          </div>
+            <button class="filter-btn btn" (click)="showFilter()">
+                filter Table 
+                <img src="	https://assetslogos.s3-eu-west-1.amazonaws.com/frontendassets/icons/icon__filter__red.svg" class="img-fluid" alt="filter logo">
+            </button>
+            <div *ngIf="isFilterOpen" class="filterDiv">
+                <form action="">
+                    <div class="filterInput-wrapper">
+                            <div class="filter-group">
+                                <div class="inputDiv">
+                                    <div class="filter-group">
+                                        <label class="filter-label">Product Name</label>
+                                        <input type="text" class="filter-input">
+                                    </div>
+                                    <div class="filter-group">
+                                        <label class="filter-label">Product Code</label>
+                                        <input type="text" class="filter-input">
+                                    </div>
+                                </div>
+                                <label class="filter-label">Product Category</label>
+                                <select class="filter-input">
+                                    <option value disabled>choose ...</option>
+                                    <option value=""></option>
+                                    <option value="all">All</option>
+                                    <option value="others">others</option>
+                                    <option value="POS">POS</option>
+                                </select>
+                            </div>
+                    </div>
+                    <div class="filterBtn-group">
+                        <button class="btn-transparent btn">clear filter</button>
+                        <button class="btn-primary btn">apply filter</button>
+                    </div>
+                </form>
+            </div>
+        </div>
           <!-- the table data section -->
           <div class="data-Container">
               <div class="table-container">

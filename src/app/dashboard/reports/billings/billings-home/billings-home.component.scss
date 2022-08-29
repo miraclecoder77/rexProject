@@ -7,17 +7,7 @@
 .wrapper {
     margin-top: 3rem;
 }
-.navigate {
-    text-decoration: none;
-    border: 1px solid #afafaf;
-    border-radius: 4px;
-    margin: auto;
-    padding: 0.625rem 1.25rem 0.625rem 3rem;
-    color: #afafaf;
-    img {
-        margin-right: 1rem;
-    }
-}
+
 .content {
     background: #fff;
     padding: 2rem;
@@ -31,6 +21,8 @@
     justify-content: space-between;
     margin-bottom: 1rem;
 }
+
+
 @media only screen and (min-width: 478px) {
     .layout{
         height: 100vh;

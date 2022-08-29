@@ -7,10 +7,38 @@
         <div class="content">
             <!-- the button layout -->
             <div class="btn-layout">
-                <button class="filter-btn btn">
+                <button class="filter-btn btn" (click)="showFilter()">
                     filter Table 
                     <img src="	https://assetslogos.s3-eu-west-1.amazonaws.com/frontendassets/icons/icon__filter__red.svg" class="img-fluid" alt="filter logo">
                 </button>
+                <div *ngIf="isFilterOpen" class="filterDiv">
+                    <form action="">
+                        <div class="filterInput-wrapper">
+                            <div class="inputDiv">
+                                <div class="filter-group">
+                                    <label class="filter-label">Customer Name</label>
+                                    <input type="text" class="filter-input">
+                                </div>
+                            </div>
+                            <div class="inputDiv">
+                                <div class="filter-group">
+                                    <label class="filter-label">Email Address</label>
+                                    <input type="text" class="filter-input">
+                                </div>
+                            </div>
+                            <div class="inputDiv">
+                                <div class="filter-group">
+                                    <label class="filter-label">Phone Number</label>
+                                    <input type="text" class="filter-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterBtn-group">
+                            <button class="btn-transparent btn">clear filter</button>
+                            <button class="btn-primary btn">apply filter</button>
+                        </div>
+                    </form>
+                </div>
                 <button type="button" class="btn-primary btn" data-toggle="modal" data-target="#exampleModalCenter">
                     Add Customers
                 </button>               

@@ -17,15 +17,11 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
-    .btn {
-        border: none !important;
-        height: 2.2rem;
-    }
   
   }
   // filter button and section layput
   .filterDiv {
-    width: 25rem;
+    min-width: 25rem;
     background: #fff;
     position: absolute;
     z-index: 1000;

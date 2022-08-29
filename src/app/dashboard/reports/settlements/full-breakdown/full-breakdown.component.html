@@ -2,10 +2,50 @@
     <div class="content">
         <!-- the button layout -->
         <div class="btn-layout">
-            <button class="filter-btn">
+            <button class="filter-btn" (click)="showFilter()">
                 filter Table 
                 <img src="	https://assetslogos.s3-eu-west-1.amazonaws.com/frontendassets/icons/icon__filter__red.svg" class="img-fluid" alt="filter logo">
             </button>
+            <div *ngIf="isFilterOpen" class="filterDiv">
+                <form action="">
+                    <div class="filterInput-wrapper">
+                        <div class="inputDiv">
+                            <div class="filter-group">
+                                <label class="filter-label">Reference</label>
+                                <input type="text" class="filter-input">
+                            </div>
+                        </div>
+                        <div class="inputDiv">
+                            <div class="filter-group">
+                                <label class="filter-label">Payment Status</label>
+                                <select class="filter-input">
+                                    <option disabled>choose ...</option>
+                                    <option value=""></option>
+                                    <option value="failed">PENDING</option>
+                                    <option value="failed">FAILED</option>
+                                    <option value="success">SUCCESS</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="inputDiv">
+                            <div class="filter-group">
+                                <label class="filter-label">Start Date</label>
+                                <input type="date" class="filter-input">
+                            </div>
+                        </div>
+                        <div class="inputDiv">
+                            <div class="filter-group">
+                                <label class="filter-label">End date</label>
+                                <input type="date" class="filter-input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterBtn-group">
+                        <button class="btn-transparent btn">clear filter</button>
+                        <button class="btn-primary btn">apply filter</button>
+                    </div>
+                </form>
+            </div>
         </div>
         <!-- the table data section -->
         <div class="data-Container">

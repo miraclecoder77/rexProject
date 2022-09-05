@@ -1,3 +1,4 @@
+import { IResponseWrapper } from './../../../../shared/models/model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FullBreakdownComponent implements OnInit {
 
-  constructor() { }
+ isFilterOpen = false 
+ constructor() { }
 
   ngOnInit(): void {
+  }
+
+  showFilter() {
+    this.isFilterOpen = !this.isFilterOpen
   }
 
 }

@@ -11,8 +11,8 @@
         <div class="content">
             <!-- the button layout -->
             <div class="btn-layout">
-                <button class="filter-btn">
-                    filter Table 
+                <button class="filter-btn" (click)="showFilter()">
+                    Filter Table 
                     <img src="	https://assetslogos.s3-eu-west-1.amazonaws.com/frontendassets/icons/icon__filter__red.svg" class="img-fluid" alt="filter logo">
                 </button>
                 <div *ngIf="isFilterOpen" class="filterDiv">
@@ -59,7 +59,7 @@
                                 <th>First Name</th>
                                 <th>Last Name</th>
                                 <th>Shop</th>
-                                <th>Total Sales Amoun</th>
+                                <th>Total Sales Amount</th>
                                 <th>Total Sales Count</th>
                                 <th>Cash Payments Value</th>
                                 <th>Cash Payments Count</th>

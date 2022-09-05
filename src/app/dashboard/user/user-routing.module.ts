@@ -26,7 +26,6 @@ const routes: Routes = [{ path: '', component: UserComponent,
                     { path: '', pathMatch: 'full', redirectTo: 'roles' },
                     { path: 'roles', component: RolesComponent },
                     { path: 'roles-update', component: RolesUpdateComponent },
-                    // {path: 'observe', component: ObserveComponent}
                   ]},
              ]},
 ];

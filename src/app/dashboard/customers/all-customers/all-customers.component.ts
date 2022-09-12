@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AllCustomersComponent implements OnInit {
   isFilterOpen: boolean = false;
+  isModalOpen:boolean = false
   customerId:any
   constructor(private route: ActivatedRoute,
               private router: Router) { }
@@ -19,8 +20,12 @@ export class AllCustomersComponent implements OnInit {
         })
   }
 
-  showFilter(){
+  toggleFilter(){
     this.isFilterOpen = !this.isFilterOpen
+  }
+
+  toggleModal() {
+    this.isModalOpen = !this.isModalOpen
   }
 
 }

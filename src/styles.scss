@@ -16,17 +16,22 @@
     z-index: 9999;
     background: url(https://rexretail-dev.globalaccelerex.com/assets/images/logo.svg) 50% no-repeat #fff;
 }
-
+// heading
+h1, h2, h3, h4, h5, h6 {
+    font-family: "BrFirma SB";
+    color: #000 !important;
+}
 // primary button
 .btn-primary {
    color: #fff !important;
    background: #ed1c25 !important; 
+   border: none !important;
 }
 .btn__sm {
     padding: 5px 25px !important;
 }
 .btn {
-    padding: 7.5px 30px ;
+    padding: 7.5px 30px !important;
     border-radius: 4px !important;
     outline: none !important;
     text-decoration: none !important;
@@ -81,7 +86,7 @@ thead th {
     padding-right: 1.25rem !important;
 }
 
-.open-btn {
+.table-body .open-btn {
     color: #ed1c25 !important;
     background: #fff !important;
     border: 1px solid #ed1c25 !important;
@@ -89,7 +94,7 @@ thead th {
     width: 4rem !important ;
     border-radius: .2rem !important;
 }
-.open-btn:hover {
+.table-body .open-btn:hover {
     color: #ed1c25 !important;
     background: #fbcacc !important;
     border: 1px solid #fbcacc !important;
@@ -117,4 +122,19 @@ thead th {
     img {
         margin-right: 1rem;
     }
+}
+//open btn 
+.open-btn {
+    height: fit-content;
+    border-radius: 4px;
+    color: #ed1c25;
+    background: #fff;
+    border: 1px solid #ed1c25;
+    transition: all .5s;
+    padding: .4rem 1rem;
+}
+.open-btn:hover {
+    color: #ed1c25;
+    background: #fbcacc;
+    border: 1px solid #fbcacc;
 }

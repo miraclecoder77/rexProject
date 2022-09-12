@@ -62,75 +62,79 @@
     display: flex;
     width: 100%;
   }
-  .btn-transparent {
-    background: transparent;
-    color: #000;
-    margin-left: auto;
-  }
-.addCustomer-btn{
-    background: #ed1c25;
-    color: #fff;
-    width: 9rem;
-}
-// modal
 
-// table data container
-.table-container {
-    min-height: 16.43rem ;
-    max-height: 44vh;
-    width: 100%;
-    overflow: auto;
-    // background: wheat;
+// modal
+#modal {
+  position: fixed;
+  z-index: 9998;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, .4);
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
-.table-section {
-    width: 100%;
-    border-collapse: collapse;
+.modal-content {
+  align-items: flex-start;
+  padding: 1.25rem 1.9rem;
+  width: 40%;
+  border-radius: .5rem;
+  box-shadow: -12px 20px 32px #33333329;
+  display: flex;
+  position: relative;
+  
 }
-thead th {
-    padding: 10px 0;
-    text-align: left;
-    background: #f9f9f9;
-    color: #767171;
-    position: sticky;
-    top: 0;
-    font-size: 1rem;
-    z-index: 100;
+.cancel-icon {
+  position: absolute;
+  width: 1.25rem;
+  height: 1.25rem;
+  top: -1.5rem;
+  right: 0;
 }
-.table-body td {
-    max-width: 9.375rem;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    padding-right: 1.25rem;
+.modal-body {
+  width: 100%;
 }
-.table-body td:nth-child(4) {
-    color: rgb(19, 165, 0);
+.modal-content h3 {
+  margin-top: 10px;
 }
-.open-btn {
-    color: #ed1c25;
-    background: #fff;
-    border: 1px solid #ed1c25;
-    transition: all 0.5s;
-    width: 4rem ;
-    border-radius: .2rem;
+.modal-content form {
+  margin: 1rem 0;
+  width: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
-.open-btn:hover {
-    color: #ed1c25;
-    background: #fbcacc;
-    border: 1px solid #fbcacc;
+//overide bootstrap form control
+.form-control:focus {
+  outline: none !important;
+  border: 1px solid black;
+  box-shadow: none !important;
 }
-// table pagination 
-.table-pagination {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.checkbox-label {
+  margin-left: 1rem;
 }
-// download cv button
-.download-btn {
-    margin-top: 1rem;
-    background: #f9f9f9;
-    width: max-content;
-    padding: .5rem;
+.input {
+  line-height: 1.5;
+  background: #fff;
+  color: #9c9898;
+  padding: 1.375rem 1.0625rem 1.0625rem;
+  height: 3rem;
+  width: 100%;
+  border-radius: .5rem;
+  border: 1px solid #ccc;
+  transition: border .3s ease;
 }
+.modal-btn-group {
+  display: flex;
+  justify-content: right;
+}
+
+
+
 
 @media only screen and (min-width: 478px) {
     .layout{

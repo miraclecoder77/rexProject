@@ -11,6 +11,7 @@ import { Chart2Component } from './chart2/chart2.component';
 
 
 
+
 @NgModule({
   declarations: [
     DashboardComponent,

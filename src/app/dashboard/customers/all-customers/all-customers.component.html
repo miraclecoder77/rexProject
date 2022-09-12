@@ -7,7 +7,7 @@
         <div class="content">
             <!-- the button layout -->
             <div class="btn-layout">
-                <button class="filter-btn" (click)="showFilter()">
+                <button class="filter-btn" (click)="toggleFilter()">
                     Filter Table 
                     <img src="	https://assetslogos.s3-eu-west-1.amazonaws.com/frontendassets/icons/icon__filter__red.svg" class="img-fluid" alt="filter logo">
                 </button>
@@ -39,10 +39,59 @@
                         </div>
                     </form>
                 </div>
-                <button type="button" class="btn-primary btn" data-toggle="modal" data-target="#exampleModalCenter">
+                <button type="button" class="btn-primary btn" (click)="toggleModal()">
                     Add Customers
                 </button>               
             </div>
+            <ng-container >
+                <div id="modal" *ngIf="isModalOpen"  >
+                    <div class="modal-content">
+                        <figure class="cancel-icon" (click)="toggleModal()">
+                            <img  src="../../../../assets/images/cancel.png" alt="cancel">
+                        </figure>
+                        <div class="modal-body">
+                            <h3>Add New Customer</h3>
+                            <p>please enter customer details to as requested</p>
+                            <form>
+                                <div class="field-container">                         
+                                    <div class="input-wrapper">
+                                        <div class="form-floating mb-3 ">
+                                          <input type="text" class="form-control" id="username" placeholder="Username">
+                                          <label for="username">First Name</label>
+                                        </div>
+                                      </div>
+                                      <div class="input-wrapper">
+                                        <div class="form-floating mb-3 ">
+                                          <input type="text" class="form-control" id="username" placeholder="Username">
+                                          <label for="username">Last Name</label>
+                                        </div>
+                                      </div>
+                                      <div class="input-wrapper">
+                                        <div class="form-floating mb-3 ">
+                                          <input type="text" class="form-control" id="username" placeholder="Username">
+                                          <label for="username">Phone Number</label>
+                                        </div>
+                                      </div>
+                                      <div class="input-wrapper">
+                                        <div class="form-floating mb-3 ">
+                                          <input type="text" class="form-control" id="username" placeholder="Username">
+                                          <label for="username">E-mail Addresss </label>
+                                        </div>
+                                      </div>
+                                      <div class="input-wrapper">
+                                        <input type="checkbox" >
+                                        <label> Recieve E-reciept</label>
+                                      </div>
+                                </div>
+                                <div class="modal-btn-group">
+                                    <button class="btn" (click)="toggleModal()"> Cancel</button>
+                                    <button class="btn btn-primary">Add Customer</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
             <!-- the table data section -->
             <div class="data-Container">
                 <div class="table-container">

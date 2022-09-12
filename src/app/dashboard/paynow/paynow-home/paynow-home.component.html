@@ -1,0 +1,61 @@
+<main class="layout">
+    <div class="wrapper">
+        <div class="header">
+            <h3>Pay Now</h3>
+            <span>Here you can make payment for your subscription plans.</span>
+        </div>
+        <div class="payment-section">
+            <div class="box-wrapper">
+                <img src="../../../assets/images/icon__pos__terminal.svg" alt="">
+                <h5>Pay with POS</h5>
+                <span>Learn more on how to pay with our POS.</span>
+                <a class="open-btn" (click)="toggleModal()">open</a>
+            </div>
+            <div class="box-wrapper">
+                <img src="../../../assets/images/icon__blue__file.svg" alt="">
+                <h5>Pay with RexPay</h5>
+                <span>Make Payment with RexPay</span>
+                <a class="open-btn" routerLink="../rexpay">open </a>
+            </div>
+        </div>
+                <!-- modal -->
+        <ng-container >
+            <div id="modal" *ngIf="isModalOpen"  >
+                <div class="modal-content">
+                    <figure class="cancel-icon" (click)="toggleModal()">
+                        <img  src="../../../assets/images/cancel.png" alt="cancel">
+                    </figure>
+                    <h2>Want to renew your subscription plan?</h2>
+                    <p>To pay for your subscription renewal, you'll need your POS. This quick guide will help you through the payment process. </p>
+                    <ul>
+                        <li>
+                            Login to your RexRetail account on your POS Device.
+                        </li>
+                        <li>
+                            Navigate to the Subscription Page.
+
+                        </li>
+                        <li>
+                            Select desired subscription plan.
+                        </li>
+                        <li>
+                            Insert your debit card.
+                        </li>
+                        <li>
+                            Enter your debit card pin.
+                        </li>
+                        <li>
+                            Click on the "Pay Now" button.
+                        </li>
+                    </ul>
+
+                    <div class="modal-btn-group">
+                        <button class="btn " (click)="toggleModal()"> Cancel</button>
+                        <button class="btn btn-primary" (click)="toggleModal()"> Got it</button>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+
+</main>

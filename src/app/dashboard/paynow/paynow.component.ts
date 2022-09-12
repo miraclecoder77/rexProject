@@ -7,13 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaynowComponent implements OnInit {
 
-  isModalOpen: boolean = false;
+ 
   constructor() { }
 
   ngOnInit(): void {
-  }
-  toggleModal() {
-    this.isModalOpen = !this.isModalOpen;
   }
 
 }
